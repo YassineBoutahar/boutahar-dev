@@ -136,6 +136,7 @@ const FloatingIcons = () => {
               }
           }
       },
+      "retina_detect": false
   }
 
   return (
