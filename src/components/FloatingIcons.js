@@ -32,10 +32,10 @@ const FloatingIcons = () => {
   const particlesObject = {
       "particles": {
           "number": {
-              "value": 2.5,
+              "value": 23,
               "density": {
-                  "enable": true,
-                  "value_area": 100
+                  "enable": false,
+                  "value_area": 1000
               }
           },
           "color": {
@@ -51,18 +51,18 @@ const FloatingIcons = () => {
                   "nb_sides": 6
               },
               "images": [
-                { "src": cppIcon, "width": 100, "height": 100 },
-                { "src": csharpIcon, "width": 100, "height": 100 },
-                { "src": htmlIcon, "width": 100, "height": 100 },
-                { "src": javaIcon, "width": 100, "height": 100 },
-                { "src": jsIcon, "width": 100, "height": 100 },
-                { "src": pgsqlIcon, "width": 100, "height": 100 },
-                { "src": pythonIcon, "width": 100, "height": 100 },
-                { "src": reactIcon, "width": 100, "height": 100 },
-                { "src": reduxIcon, "width": 100, "height": 100 },
-                { "src": swiftIcon, "width": 100, "height": 100 },
-                { "src": letterYIcon, "width": 100, "height": 100 },
-                { "src": letterBIcon, "width": 100, "height": 100 },
+                { "src": cppIcon, "width": 10, "height": 10 },
+                { "src": csharpIcon, "width": 10, "height": 10 },
+                { "src": htmlIcon, "width": 10, "height": 10 },
+                { "src": javaIcon, "width": 10, "height": 10 },
+                { "src": jsIcon, "width": 10, "height": 10 },
+                { "src": pgsqlIcon, "width": 10, "height": 10 },
+                { "src": pythonIcon, "width": 10, "height": 10 },
+                { "src": reactIcon, "width": 10, "height": 10 },
+                { "src": reduxIcon, "width": 10, "height": 10 },
+                { "src": swiftIcon, "width": 10, "height": 10 },
+                { "src": letterYIcon, "width": 10, "height": 10 },
+                { "src": letterBIcon, "width": 10, "height": 10 },
               ]
           },
           "opacity": {
