@@ -29,6 +29,7 @@ const MainTitle = () => {
             typeSpeed={80}
             backDelay={800}
             showCursor={false}
+            startDelay={1600}
             onComplete={ (self) => { /*self.cursor.remove();*/ self.stop(); } }>
         </Typed>
       </Typography>
@@ -39,7 +40,7 @@ const MainTitle = () => {
             typeSpeed={80}
             backSpeed={80}
             showCursor={false}
-            startDelay={1700}
+            startDelay={3200}
             onComplete={ (self) => { /*self.cursor.remove();*/ self.stop(); } }>
         </Typed>
       </Typography>

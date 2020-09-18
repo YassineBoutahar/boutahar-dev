@@ -30,7 +30,7 @@ const Footer = (props) => {
       <Box display="flex" justifyContent="flex-end" flexDirection="column" className={classes.content}>
         <LazyLoad
           debounce={false}
-          offsetVertical={500}
+          offsetVertical={250}
           >
           <Typography variant="h6" className={classes.imLikely}>
             <ImLikely/>

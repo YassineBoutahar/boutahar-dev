@@ -32,9 +32,10 @@ const FloatingIcons = () => {
   const particlesObject = {
       "particles": {
           "number": {
-              "value": 15,
+              "value": 20,
               "density": {
                   "enable": false,
+                  "value_area": 700
               }
           },
           "color": {
@@ -50,36 +51,43 @@ const FloatingIcons = () => {
                   "nb_sides": 6
               },
               "images": [
-                { "src": cppIcon, "width": 10, "height": 10 },
-                { "src": csharpIcon, "width": 10, "height": 10 },
-                { "src": htmlIcon, "width": 10, "height": 10 },
-                { "src": javaIcon, "width": 10, "height": 10 },
-                { "src": jsIcon, "width": 10, "height": 10 },
-                { "src": pgsqlIcon, "width": 10, "height": 10 },
-                { "src": pythonIcon, "width": 10, "height": 10 },
-                { "src": reactIcon, "width": 10, "height": 10 },
-                { "src": reduxIcon, "width": 10, "height": 10 },
-                { "src": swiftIcon, "width": 10, "height": 10 },
-                { "src": letterYIcon, "width": 10, "height": 10 },
-                { "src": letterBIcon, "width": 10, "height": 10 },
+                { "src": cppIcon, "width": 100, "height": 100 },
+                { "src": csharpIcon, "width": 100, "height": 100 },
+                { "src": htmlIcon, "width": 100, "height": 100 },
+                { "src": javaIcon, "width": 100, "height": 100 },
+                { "src": jsIcon, "width": 100, "height": 100 },
+                { "src": pgsqlIcon, "width": 100, "height": 100 },
+                { "src": pythonIcon, "width": 100, "height": 100 },
+                { "src": reactIcon, "width": 100, "height": 100 },
+                { "src": reduxIcon, "width": 100, "height": 100 },
+                { "src": swiftIcon, "width": 100, "height": 100 },
+                { "src": letterYIcon, "width": 100, "height": 100 },
+                { "src": letterBIcon, "width": 100, "height": 100 },
               ]
           },
           "opacity": {
-              "value": 1.0,
+              "value": 1,
               "random": false
           },
           "size": {
-              "value": 20,
-              "random": false
+            "value": 20,
+            "random": {
+              "enable": true,
+              "minimumValue": 12
+            }
           },
           "line_linked": {
               "enable": false,
+              "distance": 200,
+              "color": "#333e5b",
+              "opacity": 0.3,
+              "width": 2
           },
           "move": {
               "enable": true,
               "speed": 1.5,
               "direction": "bottom",
-              "random": false,
+              "random": true,
               "straight": true,
               "out_mode": "out",
               "bounce": false,
@@ -103,20 +111,23 @@ const FloatingIcons = () => {
                   "enable": true,
                   "mode": "push"
               },
-              "resize": false
+              "resize": true
           },
           "modes": {
               "bubble": {
                   "distance": 200,
-                  "size": 24,
+                  "size": 26,
                   "duration": 1,
                   "opacity": 1.0,
                   "speed": 0.5
               },
+              "push": {
+                  "particles_nb": 1
+              },
           }
       },
       "retina_detect": false,
-      "fps_limit": 30,
+      "fps_limit": 60,
   }
 
   return (

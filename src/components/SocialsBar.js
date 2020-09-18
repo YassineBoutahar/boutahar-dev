@@ -21,20 +21,20 @@ const useStyles = makeStyles(theme => ({
     marginTop: "-4rem",
   },
   "first": {
-    "-webkit-animation": `$fadein 4500ms ${theme.transitions.easing.sharp}`,
-    animation:`$fadein 4500ms ${theme.transitions.easing.sharp}`,
+    "-webkit-animation": `$fadein 6000ms ${theme.transitions.easing.sharp}`,
+    animation:`$fadein 6000ms ${theme.transitions.easing.sharp}`,
   },
   "second": {
-    "-webkit-animation": `$fadein 4600ms ${theme.transitions.easing.sharp}`,
-    animation:`$fadein 4600ms ${theme.transitions.easing.sharp}`,
+    "-webkit-animation": `$fadein 6100ms ${theme.transitions.easing.sharp}`,
+    animation:`$fadein 6100ms ${theme.transitions.easing.sharp}`,
   },
   "third": {
-    "-webkit-animation": `$fadein 4700ms ${theme.transitions.easing.sharp}`,
-    animation:`$fadein 4700ms ${theme.transitions.easing.sharp}`,
+    "-webkit-animation": `$fadein 6200ms ${theme.transitions.easing.sharp}`,
+    animation:`$fadein 6200ms ${theme.transitions.easing.sharp}`,
   },
   "fourth": {
-    "-webkit-animation": `$fadein 4800ms ${theme.transitions.easing.sharp}`,
-    animation:`$fadein 4800ms ${theme.transitions.easing.sharp}`,
+    "-webkit-animation": `$fadein 6300ms ${theme.transitions.easing.sharp}`,
+    animation:`$fadein 6300ms ${theme.transitions.easing.sharp}`,
   },
   "@-webkit-keyframes fadein": {
     "0%": { opacity: 0 },
