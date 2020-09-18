@@ -1,6 +1,7 @@
 import React from 'react';
 import { makeStyles, Typography, Box } from '@material-ui/core';
 import ImLikely from '../components/ImLikely';
+import LazyLoad from 'react-lazy-load';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -27,9 +28,14 @@ const Footer = (props) => {
   return (
     <Box display="flex" className={classes.root}>
       <Box display="flex" justifyContent="flex-end" flexDirection="column" className={classes.content}>
-        <Typography variant="h6" className={classes.imLikely}>
-          <ImLikely/>
-        </Typography>
+        <LazyLoad
+          debounce={false}
+          offsetVertical={500}
+          >
+          <Typography variant="h6" className={classes.imLikely}>
+            <ImLikely/>
+          </Typography>
+        </LazyLoad>
         <Typography variant="caption" className={classes.copyright}>
           Copyright © Yassine Boutahar 2020
         </Typography>

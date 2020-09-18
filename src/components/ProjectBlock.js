@@ -1,5 +1,6 @@
 import React from 'react';
 import { makeStyles, Box, Typography } from '@material-ui/core';
+import LazyLoad from 'react-lazy-load';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -77,7 +78,12 @@ const ProjectBlock = (props) => {
 
       <Box display="flex" className={classes.col}>
         <a href={props.link}>
-          <img src={props.img} alt={props.alt} className={classes.image}/>
+          <LazyLoad
+            debounce={false}
+            offsetVertical={500}
+            >
+            <img src={props.img} alt={props.alt} className={classes.image}/>
+          </LazyLoad>
         </a>
       </Box>
     </Box>

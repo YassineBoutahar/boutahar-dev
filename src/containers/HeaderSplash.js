@@ -4,7 +4,7 @@ import FloatingIcons from '../components/FloatingIcons';
 import MainTitle from '../components/MainTitle';
 import SocialsBar from '../components/SocialsBar';
 import ScrollableAnchor from 'react-scrollable-anchor';
-import headshot from '../images/headshot.png';
+import headshot from '../images/smaller_headshot.png';
 
 const useStyles = makeStyles(theme => ({
   root: {

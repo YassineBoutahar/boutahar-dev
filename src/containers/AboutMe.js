@@ -2,10 +2,10 @@ import React from 'react';
 import WideContainer from './WideContainer';
 import AboutBlock from '../components/AboutBlock';
 import { makeStyles, Typography } from '@material-ui/core';
-import signiantLogo from '../images/signiant.png';
-import apptionLogo from '../images/apption.png';
-import bd2iLogo from '../images/bd2i.png';
-import carletonLogo from '../images/carleton.png';
+import signiantLogo from '../images/smaller_signiant.png';
+import apptionLogo from '../images/smaller_apption.png';
+import bd2iLogo from '../images/smaller_bd2i.png';
+import carletonLogo from '../images/smaller_carleton.png';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor'
 configureAnchors({offset: -64, scrollDuration: 600});
