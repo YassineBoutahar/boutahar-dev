@@ -32,10 +32,9 @@ const FloatingIcons = () => {
   const particlesObject = {
       "particles": {
           "number": {
-              "value": 23,
+              "value": 15,
               "density": {
                   "enable": false,
-                  "value_area": 1000
               }
           },
           "color": {
@@ -66,25 +65,21 @@ const FloatingIcons = () => {
               ]
           },
           "opacity": {
-              "value": 0.5,
-              "random": true
+              "value": 1.0,
+              "random": false
           },
           "size": {
               "value": 20,
-              "random": true
+              "random": false
           },
           "line_linked": {
               "enable": false,
-              "distance": 200,
-              "color": "#333e5b",
-              "opacity": 0.3,
-              "width": 2
           },
           "move": {
               "enable": true,
               "speed": 1.5,
               "direction": "bottom",
-              "random": true,
+              "random": false,
               "straight": true,
               "out_mode": "out",
               "bounce": false,
@@ -108,15 +103,9 @@ const FloatingIcons = () => {
                   "enable": true,
                   "mode": "push"
               },
-              "resize": true
+              "resize": false
           },
           "modes": {
-              "grab": {
-                  "distance": 400,
-                  "line_linked": {
-                      "opacity": 0.7
-                  }
-              },
               "bubble": {
                   "distance": 200,
                   "size": 24,
@@ -124,19 +113,10 @@ const FloatingIcons = () => {
                   "opacity": 1.0,
                   "speed": 0.5
               },
-              "repulse": {
-                  "distance": 100,
-                  "duration": 2
-              },
-              "push": {
-                  "particles_nb": 1
-              },
-              "remove": {
-                  "particles_nb": 10
-              }
           }
       },
-      "retina_detect": false
+      "retina_detect": false,
+      "fps_limit": 30,
   }
 
   return (
