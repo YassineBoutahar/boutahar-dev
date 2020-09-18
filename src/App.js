@@ -1,6 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Button from '@material-ui/core/Button';
 import NavBar from './components/NavBar';
 import HeaderSplash from './containers/HeaderSplash';
 import AboutMe from './containers/AboutMe';

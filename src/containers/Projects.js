@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, Button, Typography, Box, Divider } from '@material-ui/core';
+import { makeStyles, Typography, Box, Divider } from '@material-ui/core';
 import ProjectBlock from '../components/ProjectBlock';
 import exampleGif from '../images/example.gif';
 import ScrollableAnchor from 'react-scrollable-anchor';

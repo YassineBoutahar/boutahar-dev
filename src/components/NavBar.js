@@ -1,7 +1,5 @@
 import React from 'react';
-import { makeStyles, AppBar, Toolbar, Typography, Button, IconButton, Link } from '@material-ui/core';
-import { goToTop } from 'react-scrollable-anchor';
-import MenuIcon from '@material-ui/icons/Menu';
+import { makeStyles, AppBar, Toolbar, Typography, Button } from '@material-ui/core';
 import ResumePDF from '../YassineBoutaharResume2021.pdf';
 
 const useStyles = makeStyles((theme) => ({
@@ -53,7 +51,7 @@ const NavBar = () => {
           </Typography>
           <Button color="inherit" href="#AboutMe">About Me</Button>
           <Button color="inherit" href="#Projects">Projcts</Button>
-          <Button color="inherit" href={ResumePDF} target="_blank">Resume</Button>
+          <Button color="inherit" href={ResumePDF} target="_blank" rel="noopener noreferrer">Resume</Button>
           <Button color="inherit" href="mailto:yassineboutahar@cmail.carleton.ca">Email Me</Button>
         </Toolbar>
       </AppBar>

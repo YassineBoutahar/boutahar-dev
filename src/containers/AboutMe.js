@@ -1,7 +1,7 @@
 import React from 'react';
 import WideContainer from './WideContainer';
 import AboutBlock from '../components/AboutBlock';
-import { makeStyles, Button, Typography } from '@material-ui/core';
+import { makeStyles, Typography } from '@material-ui/core';
 import signiantLogo from '../images/signiant.png';
 import apptionLogo from '../images/apption.png';
 import bd2iLogo from '../images/bd2i.png';

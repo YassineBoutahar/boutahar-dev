@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, Box, Typography, Divider } from '@material-ui/core';
+import { makeStyles, Box } from '@material-ui/core';
 import {ReactComponent as LinkedInIcon} from '../Icons/linkedin.svg';
 import {ReactComponent as GithubIcon} from '../Icons/github.svg';
 import {ReactComponent as ResumeIcon} from '../Icons/resume.svg';
@@ -53,10 +53,10 @@ const SocialsBar = (props) => {
 
   return (
     <Box display="flex" alignItems="center" justifyContent="space-between" className={classes.root}>
-      <a href="https://www.linkedin.com/in/yassineboutahar/" target="_blank" className={`${classes.endIcon} ${classes.first}`}><LinkedInIcon className={classes.icon}/></a>
-      <a href="https://github.com/yassineboutahar" target="_blank" className={classes.second}><GithubIcon className={classes.icon}/></a>
-      <a href={ResumePDF} target="_blank" className={classes.third}><ResumeIcon className={classes.icon}/></a>
-      <a href="mailto:yassineboutahar@cmail.carleton.ca" target="_blank" className={`${classes.endIcon} ${classes.fourth}`}><EmailIcon className={classes.icon}/></a>
+      <a href="https://www.linkedin.com/in/yassineboutahar/" target="_blank" rel="noopener noreferrer" className={`${classes.endIcon} ${classes.first}`}><LinkedInIcon className={classes.icon}/></a>
+      <a href="https://github.com/yassineboutahar" target="_blank" rel="noopener noreferrer" className={classes.second}><GithubIcon className={classes.icon}/></a>
+      <a href={ResumePDF} target="_blank" rel="noopener noreferrer" className={classes.third}><ResumeIcon className={classes.icon}/></a>
+      <a href="mailto:yassineboutahar@cmail.carleton.ca" target="_blank" rel="noopener noreferrer" className={`${classes.endIcon} ${classes.fourth}`}><EmailIcon className={classes.icon}/></a>
     </Box>
   );
 }

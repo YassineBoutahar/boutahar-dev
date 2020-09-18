@@ -1,6 +1,5 @@
 import React from 'react';
 import { makeStyles, Typography, Box } from '@material-ui/core';
-import ImLikely from './ImLikely';
 import Typed from 'react-typed';
 
 const useStyles = makeStyles(theme => ({
@@ -17,7 +16,6 @@ const useStyles = makeStyles(theme => ({
 
 const MainTitle = () => {
   const classes = useStyles();
-  var secondCursor = false;
 
   return (
     <Box

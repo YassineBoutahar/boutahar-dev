@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, Typography, Box, Divider } from '@material-ui/core';
+import { makeStyles, Box, Divider } from '@material-ui/core';
 import FloatingIcons from '../components/FloatingIcons';
 import MainTitle from '../components/MainTitle';
 import SocialsBar from '../components/SocialsBar';
