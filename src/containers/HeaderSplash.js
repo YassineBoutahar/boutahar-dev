@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, Box, Divider } from '@material-ui/core';
+import { makeStyles, useMediaQuery, Box, Divider, Typography } from '@material-ui/core';
 import FloatingIcons from '../components/FloatingIcons';
 import MainTitle from '../components/MainTitle';
 import SocialsBar from '../components/SocialsBar';
@@ -49,6 +49,22 @@ const useStyles = makeStyles(theme => ({
     "-webkit-animation": `$fadein 3300ms ${theme.transitions.easing.sharp}`,
     animation:`$fadein 3300ms ${theme.transitions.easing.sharp}`,
   },
+  headshotMedium: {
+    width: "15rem",
+    height: "auto",
+    borderRadius: "50%",
+    verticalAlign: "middle",
+    "-webkit-animation": `$fadein 3300ms ${theme.transitions.easing.sharp}`,
+    animation:`$fadein 3300ms ${theme.transitions.easing.sharp}`,
+  },
+  headshotSmall: {
+    width: "12rem",
+    height: "auto",
+    borderRadius: "50%",
+    verticalAlign: "middle",
+    "-webkit-animation": `$fadein 2700ms ${theme.transitions.easing.sharp}`,
+    animation:`$fadein 2700ms ${theme.transitions.easing.sharp}`,
+  },
   "@-webkit-keyframes fadein": {
     "0%": { opacity: 0 },
     "66%": { opacity: 0 },
@@ -59,10 +75,77 @@ const useStyles = makeStyles(theme => ({
     "66%": { opacity: 0 },
     "100%": { opacity: 1 },
   },
+
+  mobileContainer: {
+    zIndex: 1002,
+    height: "100%",
+    width: "90%",
+    flexGrow: 1,
+  },
+  mobileTitle: {
+    textAlign: "left",
+    color: "#cea842",
+  },
+  mobileDivider: {
+    height: "2px",
+    backgroundColor: "#cea842",
+    width: "100%",
+    marginBottom: "3rem",
+  }
 }));
 
 const HeaderSplash = () => {
   const classes = useStyles();
+  const large = useMediaQuery('(min-width:1550px)');
+  const medium = useMediaQuery('(min-width:1020px)');
+  let sizeVariant = large ? "" : "medium";
+  let headshotClass = large ? classes.headshot : classes.headshotMedium;
+  let inside;
+  if(medium){
+    inside = (
+      <Box
+        display="flex"
+        justifyContent="center"
+        className={classes.container}>
+
+        <Box display="flex" justifyContent="center" flexDirection="column" className={classes.colLeft}>
+          <MainTitle variant={sizeVariant}/>
+          <Divider className={classes.divider}/>
+        </Box>
+
+        <Box display="flex" justifyContent="center" flexDirection="column" alignItems="center" className={classes.colRight}>
+          <img src={headshot} alt="headshot" className={headshotClass} onContextMenu={(e)=> e.preventDefault()}/>
+          <SocialsBar variant="medium"/>
+        </Box>
+
+      </Box>
+    );
+  }
+  else{
+    inside = (
+      <Box
+        display="flex"
+        justifyContent="center"
+        flexDirection="column"
+        alignItems="center"
+        className={classes.mobileContainer}>
+
+        <div>
+          <Typography variant="h4" className={classes.mobileTitle}>
+            Welcome,
+          </Typography>
+          <Typography variant="h3" className={classes.mobileTitle}>
+            I'm Yassine!
+          </Typography>
+          <Divider className={classes.mobileDivider}/>
+        </div>
+
+        <img src={headshot} alt="headshot" className={classes.headshotSmall} onContextMenu={(e)=> e.preventDefault()}/>
+        <SocialsBar variant="small"/>
+
+      </Box>
+    );
+  }
 
   return (
     <ScrollableAnchor id={'Splash'}>
@@ -73,22 +156,7 @@ const HeaderSplash = () => {
         alignItems="center"
         className={classes.root}>
         <FloatingIcons/>
-        <Box
-          display="flex"
-          justifyContent="center"
-          className={classes.container}>
-
-          <Box display="flex" justifyContent="center" flexDirection="column" className={classes.colLeft}>
-            <MainTitle/>
-            <Divider className={classes.divider}/>
-          </Box>
-
-          <Box display="flex" justifyContent="center" flexDirection="column" alignItems="center" className={classes.colRight}>
-            <img src={headshot} alt="headshot" className={classes.headshot} onContextMenu={(e)=> e.preventDefault()}/>
-            <SocialsBar/>
-          </Box>
-
-        </Box>
+        {inside}
       </Box>
     </ScrollableAnchor>
   );

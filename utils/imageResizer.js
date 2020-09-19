@@ -4,6 +4,6 @@ const directory = '../src/images';
 
 fs.readdirSync(directory).forEach(file => {
   sharp(`${directory}/${file}`)
-    .resize(500, null) // width, height
-    .toFile(`${directory}/smaller_${file}`);
+    .resize(100, null) // width, height
+    .toFile(`${directory}/mobile_${file}`);
   });

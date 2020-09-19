@@ -10,19 +10,26 @@ const useStyles = makeStyles(theme => ({
   title: {
     textAlign: "left",
     color: "#cea842",
-    topMargin: "15px",
   },
 }));
 
-const MainTitle = () => {
+const MainTitle = (props) => {
   const classes = useStyles();
+  let smallFont = "h2";
+  let bigFont = "h1";
+  let mainTitle;
+
+  if(props.variant === "medium"){
+    smallFont = "h3";
+    bigFont = "h2";
+  }
 
   return (
     <Box
       display="flex"
       flexDirection="column"
       className={classes.root}>
-      <Typography variant="h2" className={classes.title}>
+      <Typography variant={smallFont} className={classes.title}>
         <Typed
         strings={['Welcome,']}
             smartBackspace={true}
@@ -33,7 +40,7 @@ const MainTitle = () => {
             onComplete={ (self) => { /*self.cursor.remove();*/ self.stop(); } }>
         </Typed>
       </Typography>
-      <Typography variant="h1" className={classes.title}>
+      <Typography variant={bigFont} className={classes.title}>
         <Typed
         strings={["I'm Yassine!", "I'm Yassine!", "I'm Yassine! :)", "I'm Yassine!"]}
             smartBackspace={true}
