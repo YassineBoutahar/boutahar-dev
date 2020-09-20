@@ -1,7 +1,7 @@
 import React from 'react';
 import WideContainer from './WideContainer';
 import AboutBlock from '../components/AboutBlock';
-import { makeStyles, useMediaQuery, Typography, List, ListItem, ListItemText } from '@material-ui/core';
+import { makeStyles, useMediaQuery, Typography } from '@material-ui/core';
 import carletonLogo from '../images/smaller_carleton.png';
 import signiantLogo from '../images/smaller_signiant.png';
 import apptionLogo from '../images/smaller_apption.png';

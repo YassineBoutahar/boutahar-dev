@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles, useMediaQuery, Typography, Box, Divider } from '@material-ui/core';
 import ProjectBlock from '../components/ProjectBlock';
-import exampleGif from '../images/example.gif';
 import findLivingSpaceDemo from '../images/FindLivingSpaceDemo.mp4';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor';
