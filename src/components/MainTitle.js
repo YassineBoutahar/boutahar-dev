@@ -17,7 +17,6 @@ const MainTitle = (props) => {
   const classes = useStyles();
   let smallFont = "h2";
   let bigFont = "h1";
-  let mainTitle;
 
   if(props.variant === "medium"){
     smallFont = "h3";

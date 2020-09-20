@@ -16,9 +16,6 @@ const useStyles = makeStyles((theme) => ({
     width: "65%",
     margin: "0 calc(5vw - 24px) 0 0",
   },
-  menuButton: {
-    marginRight: theme.spacing(2),
-  },
   title: {
     flexGrow: 1,
     textAlign: "left",
@@ -38,14 +35,6 @@ const useStyles = makeStyles((theme) => ({
       textDecoration: "none",
     },
   },
-
-  menuButton: {
-    '&:target': {
-      transform: "rotate(90eg)",
-      "-webkit-transform": "rotate(90deg)",
-      "-ms-transform": "rotate(90deg)",
-    },
-  }
 }));
 
 const NavBar = () => {
@@ -81,8 +70,8 @@ const NavBar = () => {
         <Typography variant="h6" className={classes.title}>
           <a href="#Splash" className={classes.a}>Yassine Boutahar</a>
         </Typography>
-        <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-          <MenuIcon aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick} className={classes.menuButton}/>
+        <IconButton edge="start" color="inherit" aria-label="menu">
+          <MenuIcon aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}/>
         </IconButton>
         <Menu
           id="simple-menu"
