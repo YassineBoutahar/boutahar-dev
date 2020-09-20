@@ -24,7 +24,8 @@ const useStyles = makeStyles(theme => ({
   },
   demoLink: {
     textAlign: "left",
-    color: "#cea842"
+    color: "#cea842",
+    marginLeft: "1em",
   },
   subtitle: {
     fontStyle: "oblique",
@@ -41,25 +42,25 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: "#cea842",
     margin: "0 2rem 0 2rem",
   },
-  image: {
-    width: "80%",
-    height: "auto",
-    display: "block",
-    margin: "auto",
-    verticalAlign: "middle"
-  },
   col: {
     "flex-basis": 0,
     "flex-grow": 1,
     marginLeft: "15px",
     marginRight: "15px",
   },
+  videoCol: {
+    "flex-basis": 0,
+    "flex-grow": 1,
+    marginRight: "15px",
+    paddingBottom: "2rem",
+    verticalAlign: "middle",
+  },
 
   mobileRoot: {
     margin: "2rem auto 2rem auto"
   },
 }));
-
+//width="320" height="240"
 const ProjectBlock = (props) => {
   const classes = useStyles();
   const desktop = useMediaQuery('(min-width:1020px)');
@@ -69,13 +70,15 @@ const ProjectBlock = (props) => {
 
   if(desktop){
     imageBlock = (
-      <Box display="flex" className={classes.col}>
+      <Box display="flex" alignItems="flex-end" className={classes.videoCol}>
         <a href={props.link}>
           <LazyLoad
             debounce={false}
             offsetVertical={500}
             >
-            <img src={props.img} alt={props.alt} className={classes.image}/>
+            <video width="85%" height="auto" autoPlay allowFullscreen loop muted>
+              <source src={props.vid} type="video/mp4"/>
+            </video>
           </LazyLoad>
         </a>
       </Box>

@@ -1,7 +1,7 @@
 import React from 'react';
 import WideContainer from './WideContainer';
 import AboutBlock from '../components/AboutBlock';
-import { makeStyles, useMediaQuery, Typography } from '@material-ui/core';
+import { makeStyles, useMediaQuery, Typography, List, ListItem, ListItemText } from '@material-ui/core';
 import carletonLogo from '../images/smaller_carleton.png';
 import signiantLogo from '../images/smaller_signiant.png';
 import apptionLogo from '../images/smaller_apption.png';
@@ -23,6 +23,9 @@ const useStyles = makeStyles(theme => ({
   },
   a: {
     color: "#cea842",
+  },
+  ul: {
+    "list-style-type": "square",
   }
 }));
 
@@ -47,21 +50,38 @@ const AboutMe = (props) => {
         <WideContainer variant="grey">
           <AboutBlock img={signiant} alt="Signiant" title="Fall 2020" link="https://www.signiant.com/">
             <Typography variant="subtitle1" className={classes.description}>
-              I'm currently working at Signiant as a Fullstack Developer co-op, primarily on the <a className={classes.a} href="https://www.signiant.com/products/signiant-manager/">Manager+Agents</a> product.
+              I'm currently working at <a className={classes.a} href="https://www.signiant.com/"><b>Signiant</b></a> as a Fullstack Developer co-op, primarily on the <a className={classes.a} href="https://www.signiant.com/products/signiant-manager/">Manager+Agents</a> product.
+              <ul className={classes.ul}>
+                <li>Frontend development - React</li>
+                <li>Backend development - Javascript, Node.js, AWS Lambda</li>
+                <li>Testing - Storybook, Jest</li>
+              </ul>
             </Typography>
           </AboutBlock>
         </WideContainer>
         <WideContainer>
           <AboutBlock img={apption} alt="Apption" title="Summer 2020" link="https://www.apption.com/">
             <Typography variant="subtitle1" className={classes.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla aliquet pellentesque lectus sed tincidunt. Aliquam erat volutpat. Fusce arcu felis, facilisis id bibendum non, eleifend et metus. Praesent pellentesque ultrices leo sed suscipit. Curabitur sit amet libero nulla. Aenean lobortis.
+              Worked at <a className={classes.a} href="https://www.apption.com/"><b>Apption</b></a> as a Fullstack Developer co-op, primarily on the <a className={classes.a} href="https://www.datahunter.ai/">Datahunter</a> product and <a className={classes.a} href="https://returntoplay.canadasoccer.com/">Return to Play</a> website.
+              <ul className={classes.ul}>
+                <li>Frontend development - Blazor, React</li>
+                <li>Backend development - .NET Core, C#, Javascript, Node.js</li>
+                <li>Data visualizations - D3.js</li>
+                <li>DevOps - Azure DevOps</li>
+                <li>Testing - TestCafe, NUnit</li>
+              </ul>
             </Typography>
           </AboutBlock>
         </WideContainer>
         <WideContainer variant="grey">
           <AboutBlock img={bd2i} alt="BD2I" title="Summer 2019" link="http://www.bd2i.ai/">
             <Typography variant="subtitle1" className={classes.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lobortis laoreet malesuada. Pellentesque id auctor massa, at eleifend urna. Sed in molestie nisi. Sed vitae pretium turpis. Morbi eget ex in nibh.
+              Interned at <a className={classes.a} href="http://www.bd2i.ai/"><b>BD2I</b></a> as a Mobile Application Developer, prototyping a currently unreleased mobile product, and training/integrating a PyTorch ML model.
+              <ul className={classes.ul}>
+                <li>Frontend/Backend development - Swift, Java, Firebase, Node.js</li>
+                <li>Machine Learning - PyTorch, Jupyter</li>
+                <li>Cloud Infrastructure - Google Cloud Platform</li>
+              </ul>
             </Typography>
           </AboutBlock>
         </WideContainer>

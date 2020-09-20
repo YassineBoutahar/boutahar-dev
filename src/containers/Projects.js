@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles, useMediaQuery, Typography, Box, Divider } from '@material-ui/core';
 import ProjectBlock from '../components/ProjectBlock';
 import exampleGif from '../images/example.gif';
+import findLivingSpaceDemo from '../images/FindLivingSpaceDemo.mp4';
 import ScrollableAnchor from 'react-scrollable-anchor';
 import { configureAnchors } from 'react-scrollable-anchor';
 configureAnchors({offset: -64, scrollDuration: 600});
@@ -33,6 +34,9 @@ const useStyles = makeStyles(theme => ({
   description: {
     color: "#e0ebff",
     textAlign: "left",
+  },
+  ul: {
+    "list-style-type": "square",
   },
 
   mobileContent: {
@@ -69,21 +73,37 @@ const Projects = (props) => {
             Projects
           </Typography>
           <Divider className={dividerClass}/>
-          <ProjectBlock img={exampleGif} title="FindLivingSpace" languages="Node.js, MongoDB, Python, React" alt="FindLivingSpace Demo" link="https://findlivingspace.boutahar.dev/">
+          <ProjectBlock vid={findLivingSpaceDemo} title="FindLivingSpace" languages="Node.js, MongoDB, Python, React" alt="FindLivingSpace Demo" link="https://findlivingspace.boutahar.dev/">
             <Typography variant="subtitle1" className={classes.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet metus facilisis, sodales velit vitae, pellentesque dolor. Donec maximus dolor tempus magna eleifend, et posuere mauris luctus. Class aptent taciti sociosqu ad litora torquent.
+              An interactive platform that helps students find affordable housing within accessible distance of their work/university.
+              <ul className={classes.ul}>
+                <li>Populates MongoDB database with listings scraped from many renting sites using a Python script</li>
+                <li>Dynamically plot accessible houses on a map using MapBox API</li>
+                <li>Calculate walking distance between coordinates using Google Maps API</li>
+                <li>Query Mongo database for listings that match user-defined criteria</li>
+              </ul>
             </Typography>
           </ProjectBlock>
           <Divider className={classes.blockDivider}/>
-          <ProjectBlock img={exampleGif} title="3K5 Books" languages="Node.js, PostgreSQL, React" alt="3K5 Books Demo" link="https://findlivingspace.boutahar.dev/">
+          <ProjectBlock vid={findLivingSpaceDemo} title="3K5 Books" languages="Node.js, PostgreSQL, React" alt="3K5 Books Demo" link="https://findlivingspace.boutahar.dev/">
             <Typography variant="subtitle1" className={classes.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis nec orci quam. Proin tellus ligula, congue quis lacus pulvinar, sagittis faucibus urna. Nullam a nulla at lacus viverra semper eget nec libero. Nam dignissim quam quam, at eleifend felis consectetur quis. Proin eget ornare ligula. Integer tempus lectus pharetra, posuere.
+              Stores and retrieves various entities such as users, books, authors, orders, etc. in a PostgeSQL DB
+              <ul className={classes.ul}>
+                <li>Dynamic search function for finding books to order</li>
+                <li>Register, login, add to cart and submit order features</li>
+                <li>Admin mode for bookstore owner to manage book inventory and publisher payouts</li>
+              </ul>
             </Typography>
           </ProjectBlock>
           <Divider className={classes.blockDivider}/>
-          <ProjectBlock img={exampleGif} title="SpotiBio" languages="Node.js, HTML" alt="SpotiBio Demo">
+          <ProjectBlock vid={findLivingSpaceDemo} title="SpotiBio" languages="Node.js, HTML" alt="SpotiBio Demo">
             <Typography variant="subtitle1" className={classes.description}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eu nunc ornare purus fringilla sagittis. Suspendisse fermentum ex tellus, eu tempus mauris rhoncus.
+              Updates your Instagram profile at a set interval to reflect your current or last played song on Spotify
+              <ul className={classes.ul}>
+                <li>Provides custom login screen to Instagram account and integrated Spotify login</li>
+                <li>Queries user’s current or last played song using Spotify API at continuous interval</li>
+                <li>Updates user’s Instagram account’s profile picture, biography and URL to match song</li>
+              </ul>
             </Typography>
           </ProjectBlock>
         </Box>

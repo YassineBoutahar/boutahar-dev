@@ -155,7 +155,7 @@ const HeaderSplash = () => {
         justifyContent="center"
         alignItems="center"
         className={classes.root}>
-        <FloatingIcons/>
+        {medium ? <FloatingIcons/> : ""}
         {inside}
       </Box>
     </ScrollableAnchor>
