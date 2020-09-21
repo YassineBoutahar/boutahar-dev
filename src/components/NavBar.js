@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles, useMediaQuery, AppBar, Toolbar, Typography, Button, Menu, MenuItem, IconButton } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import ResumePDF from '../YassineBoutaharResume2021.pdf';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -35,6 +36,15 @@ const useStyles = makeStyles((theme) => ({
       textDecoration: "none",
     },
   },
+
+  mobileMenuItem: {
+    backgroundColor: "#333e5b",
+  },
+  paperChanger: {
+    "& .MuiPaper-root": {
+      backgroundColor: "#333e5b",
+    },
+  }
 }));
 
 const NavBar = () => {
@@ -55,12 +65,12 @@ const NavBar = () => {
     appBar = (
       <Toolbar className={classes.toolbar}>
         <Typography variant="h6" className={classes.title}>
-          <a href="#Splash" className={classes.a}>Yassine Boutahar</a>
+          <AnchorLink offset='64' href='#Splash' className={classes.a}>Yassine Boutahar</AnchorLink>
         </Typography>
-        <Button color="inherit" href="#AboutMe">About Me</Button>
-        <Button color="inherit" href="#Projects">Projcts</Button>
-        <Button color="inherit" href={ResumePDF} target="_blank" rel="noopener noreferrer">Resume</Button>
-        <Button color="inherit" href="mailto:yassineboutahar@cmail.carleton.ca">Email Me</Button>
+        <AnchorLink offset='64' href='#AboutMe' className={classes.a}><Button color="inherit">About Me</Button></AnchorLink>
+        <AnchorLink offset='64' href='#Projects' className={classes.a}><Button color="inherit">Projects</Button></AnchorLink>
+        <Button color="inherit" href={ResumePDF} target="_blank" rel="noopener noreferrer" className={classes.a}>Resume</Button>
+        <Button color="inherit" href="mailto:yassineboutahar@cmail.carleton.ca" className={classes.a}>Email Me</Button>
       </Toolbar>
     );
   }
@@ -68,7 +78,7 @@ const NavBar = () => {
     appBar = (
       <Toolbar className={classes.toolbar}>
         <Typography variant="h6" className={classes.title}>
-          <a href="#Splash" className={classes.a}>Yassine Boutahar</a>
+          <AnchorLink offset='56' href='#Splash' className={classes.a}>Yassine Boutahar</AnchorLink>
         </Typography>
         <IconButton edge="start" color="inherit" aria-label="menu">
           <MenuIcon aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}/>
@@ -82,12 +92,13 @@ const NavBar = () => {
           keepMounted
           open={Boolean(anchorEl)}
           onClose={handleClose}
+          className={classes.paperChanger}
         >
-        <MenuItem onClick={handleClose}><Button color="inherit" href="#AboutMe">About Me</Button></MenuItem>
-        <MenuItem onClick={handleClose}><Button color="inherit" href="#Projects">Projects</Button></MenuItem>
-        <MenuItem onClick={handleClose}><Button color="inherit" href={ResumePDF} target="_blank" rel="noopener noreferrer">Resume</Button></MenuItem>
-        <MenuItem onClick={handleClose}><Button color="inherit" href="mailto:yassineboutahar@cmail.carleton.ca">Email Me</Button></MenuItem>
-      </Menu>
+          <MenuItem onClick={handleClose} className={classes.mobileMenuItem}><AnchorLink offset='56' href='#AboutMe' className={classes.a}><Button color="inherit">About Me</Button></AnchorLink></MenuItem>
+          <MenuItem onClick={handleClose} className={classes.mobileMenuItem}><AnchorLink offset='56' href='#Projects' className={classes.a}><Button color="inherit">Projects</Button></AnchorLink></MenuItem>
+          <MenuItem onClick={handleClose} className={classes.mobileMenuItem}><Button color="inherit" href={ResumePDF} target="_blank" rel="noopener noreferrer" className={classes.a}>Resume</Button></MenuItem>
+          <MenuItem onClick={handleClose} className={classes.mobileMenuItem}><Button color="inherit" href="mailto:yassineboutahar@cmail.carleton.ca" className={classes.a}>Email Me</Button></MenuItem>
+        </Menu>
       </Toolbar>
     );
   }

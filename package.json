@@ -9,6 +9,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "react": "^16.13.1",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.13.1",
     "react-helmet": "^6.1.0",
     "react-lazy-load": "^3.1.13",
@@ -16,7 +17,6 @@
     "react-preloaders": "^3.0.3",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
-    "react-scrollable-anchor": "^0.6.1",
     "react-typed": "^1.2.0",
     "sharp": "^0.26.0"
   },

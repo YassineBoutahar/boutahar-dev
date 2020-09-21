@@ -3,7 +3,6 @@ import { makeStyles, useMediaQuery, Box, Divider, Typography } from '@material-u
 import FloatingIcons from '../components/FloatingIcons';
 import MainTitle from '../components/MainTitle';
 import SocialsBar from '../components/SocialsBar';
-import ScrollableAnchor from 'react-scrollable-anchor';
 import headshot from '../images/smaller_headshot.png';
 
 const useStyles = makeStyles(theme => ({
@@ -148,17 +147,16 @@ const HeaderSplash = () => {
   }
 
   return (
-    <ScrollableAnchor id={'Splash'}>
-      <Box
-        display="flex"
-        flexDirection="column"
-        justifyContent="center"
-        alignItems="center"
-        className={classes.root}>
-        {medium ? <FloatingIcons/> : ""}
-        {inside}
-      </Box>
-    </ScrollableAnchor>
+    <Box
+      display="flex"
+      flexDirection="column"
+      justifyContent="center"
+      alignItems="center"
+      className={classes.root}
+      id="Splash">
+      {medium ? <FloatingIcons/> : ""}
+      {inside}
+    </Box>
   );
 }
 

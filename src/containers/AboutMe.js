@@ -10,9 +10,6 @@ import mobileCarletonLogo from '../images/mobile_carleton.png';
 import mobileSigniantLogo from '../images/mobile_signiant.png';
 import mobileApptionLogo from '../images/mobile_apption.png';
 import mobileBd2iLogo from '../images/mobile_bd2i.png';
-import ScrollableAnchor from 'react-scrollable-anchor';
-import { configureAnchors } from 'react-scrollable-anchor'
-configureAnchors({offset: -64, scrollDuration: 600});
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -38,55 +35,53 @@ const AboutMe = (props) => {
   let bd2i = desktop ? bd2iLogo : mobileBd2iLogo;
 
   return (
-    <ScrollableAnchor id={'AboutMe'}>
-      <div>
-        <WideContainer>
-          <AboutBlock img={carleton} alt="Carleton University" title="About Me" link="https://carleton.ca/scs/">
-            <Typography variant="subtitle1" className={classes.description}>
-              I'm a third year student in Carleton University's Computer Science Honours program with a minor in psychology. While I am usually studying out of Ottawa, Ontario, I am currently working from home in Toronto and seeeking opportunities for the 2021 Summer term.
-            </Typography>
-          </AboutBlock>
-        </WideContainer>
-        <WideContainer variant="grey">
-          <AboutBlock img={signiant} alt="Signiant" title="Fall 2020" link="https://www.signiant.com/">
-            <Typography variant="subtitle1" className={classes.description}>
-              I'm currently working at <a className={classes.a} href="https://www.signiant.com/"><b>Signiant</b></a> as a Fullstack Developer co-op, primarily on the <a className={classes.a} href="https://www.signiant.com/products/signiant-manager/">Manager+Agents</a> product.
-              <ul className={classes.ul}>
-                <li>Frontend development - React</li>
-                <li>Backend development - Javascript, Node.js, AWS Lambda</li>
-                <li>Testing - Storybook, Jest</li>
-              </ul>
-            </Typography>
-          </AboutBlock>
-        </WideContainer>
-        <WideContainer>
-          <AboutBlock img={apption} alt="Apption" title="Summer 2020" link="https://www.apption.com/">
-            <Typography variant="subtitle1" className={classes.description}>
-              Worked at <a className={classes.a} href="https://www.apption.com/"><b>Apption</b></a> as a Fullstack Developer co-op, primarily on the <a className={classes.a} href="https://www.datahunter.ai/">Datahunter</a> product and <a className={classes.a} href="https://returntoplay.canadasoccer.com/">Return to Play</a> website.
-              <ul className={classes.ul}>
-                <li>Frontend development - Blazor, React</li>
-                <li>Backend development - .NET Core, C#, Javascript, Node.js</li>
-                <li>Data visualizations - D3.js</li>
-                <li>DevOps - Azure DevOps</li>
-                <li>Testing - TestCafe, NUnit</li>
-              </ul>
-            </Typography>
-          </AboutBlock>
-        </WideContainer>
-        <WideContainer variant="grey">
-          <AboutBlock img={bd2i} alt="BD2I" title="Summer 2019" link="http://www.bd2i.ai/">
-            <Typography variant="subtitle1" className={classes.description}>
-              Interned at <a className={classes.a} href="http://www.bd2i.ai/"><b>BD2I</b></a> as a Mobile Application Developer, prototyping a currently unreleased mobile product, and training/integrating a PyTorch ML model.
-              <ul className={classes.ul}>
-                <li>Frontend/Backend development - Swift, Java, Firebase, Node.js</li>
-                <li>Machine Learning - PyTorch, Jupyter</li>
-                <li>Cloud Infrastructure - Google Cloud Platform</li>
-              </ul>
-            </Typography>
-          </AboutBlock>
-        </WideContainer>
-      </div>
-    </ScrollableAnchor>
+    <div id="AboutMe">
+      <WideContainer>
+        <AboutBlock img={carleton} alt="Carleton University" title="About Me" link="https://carleton.ca/scs/">
+          <Typography variant="subtitle1" className={classes.description}>
+            I'm a third year student in Carleton University's Computer Science Honours program with a minor in psychology. While I am usually studying out of Ottawa, Ontario, I am currently working from home in Toronto and seeeking opportunities for the 2021 Summer term.
+          </Typography>
+        </AboutBlock>
+      </WideContainer>
+      <WideContainer variant="grey">
+        <AboutBlock img={signiant} alt="Signiant" title="Fall 2020" link="https://www.signiant.com/">
+          <Typography variant="subtitle1" className={classes.description}>
+            I'm currently working at <a className={classes.a} href="https://www.signiant.com/"><b>Signiant</b></a> as a Fullstack Developer co-op, primarily on the <a className={classes.a} href="https://www.signiant.com/products/signiant-manager/">Manager+Agents</a> product.
+            <ul className={classes.ul}>
+              <li>Frontend development - React</li>
+              <li>Backend development - Javascript, Node.js, AWS Lambda</li>
+              <li>Testing - Storybook, Jest</li>
+            </ul>
+          </Typography>
+        </AboutBlock>
+      </WideContainer>
+      <WideContainer>
+        <AboutBlock img={apption} alt="Apption" title="Summer 2020" link="https://www.apption.com/">
+          <Typography variant="subtitle1" className={classes.description}>
+            Worked at <a className={classes.a} href="https://www.apption.com/"><b>Apption</b></a> as a Fullstack Developer co-op, primarily on the <a className={classes.a} href="https://www.datahunter.ai/">Datahunter</a> product and <a className={classes.a} href="https://returntoplay.canadasoccer.com/">Return to Play</a> website.
+            <ul className={classes.ul}>
+              <li>Frontend development - Blazor, React</li>
+              <li>Backend development - .NET Core, C#, Javascript, Node.js</li>
+              <li>Data visualizations - D3.js</li>
+              <li>DevOps - Azure DevOps</li>
+              <li>Testing - TestCafe, NUnit</li>
+            </ul>
+          </Typography>
+        </AboutBlock>
+      </WideContainer>
+      <WideContainer variant="grey">
+        <AboutBlock img={bd2i} alt="BD2I" title="Summer 2019" link="http://www.bd2i.ai/">
+          <Typography variant="subtitle1" className={classes.description}>
+            Interned at <a className={classes.a} href="http://www.bd2i.ai/"><b>BD2I</b></a> as a Mobile Application Developer, prototyping a currently unreleased mobile product, and training/integrating a PyTorch ML model.
+            <ul className={classes.ul}>
+              <li>Frontend/Backend development - Swift, Java, Firebase, Node.js</li>
+              <li>Machine Learning - PyTorch, Jupyter</li>
+              <li>Cloud Infrastructure - Google Cloud Platform</li>
+            </ul>
+          </Typography>
+        </AboutBlock>
+      </WideContainer>
+    </div>
   );
 }
 

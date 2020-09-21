@@ -15,10 +15,11 @@ const App = () => {
           <title>Yassine Boutahar</title>
           <link rel="canonical" href="https://www.boutahar.dev/" />
       </Helmet>
-      <NavBar/>
       <header className="App-header">
-        <HeaderSplash/>
+
       </header>
+      <NavBar/>
+      <HeaderSplash/>
       <AboutMe/>
       <Projects/>
       <Footer/>
