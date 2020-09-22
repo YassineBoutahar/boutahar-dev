@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles, useMediaQuery, Typography, Box, Divider } from '@material-ui/core';
 import ProjectBlock from '../components/ProjectBlock';
 import findLivingSpaceDemo from '../images/FindLivingSpaceDemo.mp4';
+import threeKFiveBooksDemo from '../images/3K5BooksDemo.mp4';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -68,7 +69,7 @@ const Projects = (props) => {
           Projects
         </Typography>
         <Divider className={dividerClass}/>
-        <ProjectBlock vid={findLivingSpaceDemo} title="FindLivingSpace" languages="Node.js, MongoDB, Python, React" alt="FindLivingSpace Demo" link="https://findlivingspace.boutahar.dev/">
+        <ProjectBlock vid={findLivingSpaceDemo} title="FindLivingSpace" languages="Node.js, MongoDB, Python, React" alt="FindLivingSpace Demo" link="https://findlivingspace.netlify.app/">
           <Typography variant="subtitle1" className={classes.description}>
             An interactive platform that helps students find affordable housing within accessible distance of their work/university.
             <ul className={classes.ul}>
@@ -80,7 +81,7 @@ const Projects = (props) => {
           </Typography>
         </ProjectBlock>
         <Divider className={classes.blockDivider}/>
-        <ProjectBlock vid={findLivingSpaceDemo} title="3K5 Books" languages="Node.js, PostgreSQL, React" alt="3K5 Books Demo" link="https://findlivingspace.boutahar.dev/">
+        <ProjectBlock vid={threeKFiveBooksDemo} title="3K5 Books" languages="Node.js, PostgreSQL, React" alt="3K5 Books Demo" link="https://lookinnabook-frontend.herokuapp.com/">
           <Typography variant="subtitle1" className={classes.description}>
             Stores and retrieves various entities such as users, books, authors, orders, etc. in a PostgeSQL DB
             <ul className={classes.ul}>
@@ -91,7 +92,7 @@ const Projects = (props) => {
           </Typography>
         </ProjectBlock>
         <Divider className={classes.blockDivider}/>
-        <ProjectBlock vid={findLivingSpaceDemo} title="SpotiBio" languages="Node.js, HTML" alt="SpotiBio Demo">
+        <ProjectBlock title="SpotiBio" languages="Node.js, HTML" alt="SpotiBio Demo">
           <Typography variant="subtitle1" className={classes.description}>
             Updates your Instagram profile at a set interval to reflect your current or last played song on Spotify
             <ul className={classes.ul}>
