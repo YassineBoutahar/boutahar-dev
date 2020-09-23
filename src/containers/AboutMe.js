@@ -39,7 +39,7 @@ const AboutMe = (props) => {
       <WideContainer>
         <AboutBlock img={carleton} alt="Carleton University" title="About Me" link="https://carleton.ca/scs/">
           <Typography variant="subtitle1" className={classes.description}>
-            I'm a third year student in Carleton University's Computer Science Honours program with a minor in psychology. While I am usually studying out of Ottawa, Ontario, I am currently working from home in Toronto and seeeking opportunities for the 2021 Summer term.
+            I am a third year student in Carleton University's Computer Science Honours program with a minor in psychology. I am currently working from home in Toronto and I am seeking internship opportunities for the 2021 Summer co-op term.
           </Typography>
         </AboutBlock>
       </WideContainer>
