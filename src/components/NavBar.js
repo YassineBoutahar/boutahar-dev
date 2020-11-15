@@ -80,8 +80,8 @@ const NavBar = () => {
         <Typography variant="h6" className={classes.title}>
           <AnchorLink offset='56' href='#Splash' className={classes.a}>Yassine Boutahar</AnchorLink>
         </Typography>
-        <IconButton edge="start" color="inherit" aria-label="menu">
-          <MenuIcon aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}/>
+        <IconButton edge="start" color="inherit" aria-label="menu" onClick={handleClick}>
+          <MenuIcon aria-controls="simple-menu" aria-haspopup="true" />
         </IconButton>
         <Menu
           id="simple-menu"
