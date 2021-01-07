@@ -52,7 +52,7 @@ const Footer = (props) => {
           </Typography>
         </LazyLoad>
         <Typography variant="caption" className={classes.copyright}>
-          Copyright © Yassine Boutahar 2020
+          Copyright © Yassine Boutahar 2021
         </Typography>
       </Box>
     </Box>

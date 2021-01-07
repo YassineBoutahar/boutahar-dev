@@ -4,7 +4,7 @@ import { makeStyles, Box } from '@material-ui/core';
 const useStyles = makeStyles(theme => ({
   root: {
     width: "100%",
-    padding: "50px 0",
+    padding: "35px 0",
     borderTop: "1px solid #232e4a",
     borderBottom: "1px solid #232e4a",
     boxShadow: "0 4px 2px -2px #1f2942",

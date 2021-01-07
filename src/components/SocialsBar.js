@@ -97,7 +97,7 @@ const SocialsBar = (props) => {
       <a href="https://www.linkedin.com/in/yassineboutahar/" target="_blank" rel="noopener noreferrer" className={`${classes.endIcon} ${firstClass}`}><LinkedInIcon className={classes.icon}/></a>
       <a href="https://github.com/yassineboutahar" target="_blank" rel="noopener noreferrer" className={secondClass}><GithubIcon className={classes.icon}/></a>
       <a href={ResumePDF} target="_blank" rel="noopener noreferrer" className={thirdClass}><ResumeIcon className={classes.icon}/></a>
-      <a href="mailto:yassineboutahar@cmail.carleton.ca" target="_blank" rel="noopener noreferrer" className={`${classes.endIcon} ${fourthClass}`}><EmailIcon className={classes.icon}/></a>
+      <a href="mailto:yassine@boutahar.dev" target="_blank" rel="noopener noreferrer" className={`${classes.endIcon} ${fourthClass}`}><EmailIcon className={classes.icon}/></a>
     </Box>
   );
 }

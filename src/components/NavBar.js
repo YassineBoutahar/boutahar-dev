@@ -70,7 +70,7 @@ const NavBar = () => {
         <AnchorLink offset='64' href='#AboutMe' className={classes.a}><Button color="inherit">About Me</Button></AnchorLink>
         <AnchorLink offset='64' href='#Projects' className={classes.a}><Button color="inherit">Projects</Button></AnchorLink>
         <Button color="inherit" href={ResumePDF} target="_blank" rel="noopener noreferrer" className={classes.a}>Resume</Button>
-        <Button color="inherit" href="mailto:yassineboutahar@cmail.carleton.ca" className={classes.a}>Email Me</Button>
+        <Button color="inherit" href="mailto:yassine@boutahar.dev" className={classes.a}>Email Me</Button>
       </Toolbar>
     );
   }

@@ -46,10 +46,10 @@ const AboutMe = (props) => {
       <WideContainer variant="grey">
         <AboutBlock img={signiant} alt="Signiant" title="Fall 2020" link="https://www.signiant.com/">
           <Typography variant="subtitle1" className={classes.description}>
-            I'm currently working at <a className={classes.a} href="https://www.signiant.com/"><b>Signiant</b></a> as a Fullstack Developer co-op, primarily on the <a className={classes.a} href="https://www.signiant.com/products/signiant-manager/">Manager+Agents</a> product.
+            Worked at <a className={classes.a} href="https://www.signiant.com/"><b>Signiant</b></a> as a Fullstack Developer co-op, primarily on the <a className={classes.a} href="https://www.signiant.com/products/signiant-manager/">Manager+Agents</a> product and cross-product React dashboard.
             <ul className={classes.ul}>
               <li>Frontend development - React</li>
-              <li>Backend development - Javascript, Node.js, AWS Lambda</li>
+              <li>Backend development - Javascript, Node.js, AWS Lambda, DynamoDB</li>
               <li>Testing - Storybook, Jest</li>
             </ul>
           </Typography>
