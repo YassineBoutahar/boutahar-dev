@@ -69,7 +69,7 @@ const Projects = (props) => {
           Projects
         </Typography>
         <Divider className={dividerClass}/>
-        <ProjectBlock vid={findLivingSpaceDemo} title="FindLivingSpace" languages="Node.js, MongoDB, Python, React" alt="FindLivingSpace Demo" link="https://findlivingspace.netlify.app/">
+        <ProjectBlock vid={findLivingSpaceDemo} title="FindLivingSpace" languages="Node.js, MongoDB, Python, React" alt="FindLivingSpace Demo" link="https://findlivingspace.boutahar.dev/">
           <Typography variant="subtitle1" className={classes.description}>
             An interactive platform that helps students find affordable housing within accessible distance of their work/university.
             <ul className={classes.ul}>
@@ -102,6 +102,17 @@ const Projects = (props) => {
             </ul>
           </Typography>
         </ProjectBlock>
+        {/*<Divider className={classes.blockDivider}/>
+        <ProjectBlock title="The Shoppies" languages="Node.js, React, Shopify Polaris, Axios" alt="Shoppies Demo" link="https://shoppies.boutahar.dev/">
+          <Typography variant="subtitle1" className={classes.description}>
+            Nomination platform for a hypothetical Shopify movie awards event
+            <ul className={classes.ul}>
+              <li>Uses OMDB to fetch movies from user search queries</li>
+              <li>Lets users nominate up to 5 movies and save their choices in local storage for convenience</li>
+              <li>Allows users to share their nominations with an attractive coverflow using a shareable link</li>
+            </ul>
+          </Typography>
+        </ProjectBlock>*/}
       </Box>
     </Box>
   );

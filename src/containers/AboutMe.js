@@ -3,6 +3,7 @@ import WideContainer from './WideContainer';
 import AboutBlock from '../components/AboutBlock';
 import { makeStyles, useMediaQuery, Typography } from '@material-ui/core';
 import carletonLogo from '../images/smaller_carleton.png';
+import gocLogo from '../images/smaller_goc.png';
 import signiantLogo from '../images/smaller_signiant.png';
 import apptionLogo from '../images/smaller_apption.png';
 import bd2iLogo from '../images/smaller_bd2i.png';
@@ -44,6 +45,13 @@ const AboutMe = (props) => {
         </AboutBlock>
       </WideContainer>
       <WideContainer variant="grey">
+        <AboutBlock img={gocLogo} alt="Department of National Defence" title="Winter 2021" link="https://www.canada.ca/en/department-national-defence.html://www.signiant.com/">
+          <Typography variant="subtitle1" className={classes.description}>
+            Currently working as software developer for the federal government of Canada.
+          </Typography>
+        </AboutBlock>
+      </WideContainer>
+      <WideContainer>
         <AboutBlock img={signiant} alt="Signiant" title="Fall 2020" link="https://www.signiant.com/">
           <Typography variant="subtitle1" className={classes.description}>
             Worked at <a className={classes.a} href="https://www.signiant.com/"><b>Signiant</b></a> as a Fullstack Developer co-op, primarily on the <a className={classes.a} href="https://www.signiant.com/products/signiant-manager/">Manager+Agents</a> product and cross-product React dashboard.
@@ -55,7 +63,7 @@ const AboutMe = (props) => {
           </Typography>
         </AboutBlock>
       </WideContainer>
-      <WideContainer>
+      <WideContainer variant="grey">
         <AboutBlock img={apption} alt="Apption" title="Summer 2020" link="https://www.apption.com/">
           <Typography variant="subtitle1" className={classes.description}>
             Worked at <a className={classes.a} href="https://www.apption.com/"><b>Apption</b></a> as a Fullstack Developer co-op, primarily on the <a className={classes.a} href="https://www.datahunter.ai/">Datahunter</a> product and <a className={classes.a} href="https://returntoplay.canadasoccer.com/">Return to Play</a> website.
@@ -69,7 +77,7 @@ const AboutMe = (props) => {
           </Typography>
         </AboutBlock>
       </WideContainer>
-      <WideContainer variant="grey">
+      <WideContainer>
         <AboutBlock img={bd2i} alt="BD2I" title="Summer 2019" link="http://www.bd2i.ai/">
           <Typography variant="subtitle1" className={classes.description}>
             Interned at <a className={classes.a} href="http://www.bd2i.ai/"><b>BD2I</b></a> as a Mobile Application Developer, prototyping a currently unreleased mobile product, and training/integrating a PyTorch ML model.

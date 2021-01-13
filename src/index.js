@@ -8,7 +8,7 @@ import { Sugar } from 'react-preloaders';
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <Sugar color={'#e0ebff'} background="linear-gradient(180deg, #333e5b 0%, #1a2139 100%)" time={700}/>
+    <Sugar color={'#e0ebff'} background="linear-gradient(180deg, #333e5b 0%, #1a2139 100%)" time={500}/>
   </React.StrictMode>,
   document.getElementById('root')
 );
