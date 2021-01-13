@@ -45,7 +45,7 @@ const AboutMe = (props) => {
         </AboutBlock>
       </WideContainer>
       <WideContainer variant="grey">
-        <AboutBlock img={gocLogo} alt="Department of National Defence" title="Winter 2021" link="https://www.canada.ca/en/department-national-defence.html://www.signiant.com/">
+        <AboutBlock img={gocLogo} alt="Department of National Defence" title="Winter 2021" link="https://www.canada.ca/">
           <Typography variant="subtitle1" className={classes.description}>
             Currently working as software developer for the federal government of Canada.
           </Typography>
