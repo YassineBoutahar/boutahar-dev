@@ -21,20 +21,20 @@ const useStyles = makeStyles(theme => ({
     marginTop: "-4rem",
   },
   "first": {
-    "-webkit-animation": `$fadein 6000ms ${theme.transitions.easing.sharp}`,
-    animation:`$fadein 6000ms ${theme.transitions.easing.sharp}`,
+    "-webkit-animation": `$fadein 4400ms ${theme.transitions.easing.sharp}`,
+    animation:`$fadein 4400ms ${theme.transitions.easing.sharp}`,
   },
   "second": {
-    "-webkit-animation": `$fadein 6100ms ${theme.transitions.easing.sharp}`,
-    animation:`$fadein 6100ms ${theme.transitions.easing.sharp}`,
+    "-webkit-animation": `$fadein 4500ms ${theme.transitions.easing.sharp}`,
+    animation:`$fadein 4500ms ${theme.transitions.easing.sharp}`,
   },
   "third": {
-    "-webkit-animation": `$fadein 6200ms ${theme.transitions.easing.sharp}`,
-    animation:`$fadein 6200ms ${theme.transitions.easing.sharp}`,
+    "-webkit-animation": `$fadein 4600ms ${theme.transitions.easing.sharp}`,
+    animation:`$fadein 4600ms ${theme.transitions.easing.sharp}`,
   },
   "fourth": {
-    "-webkit-animation": `$fadein 6300ms ${theme.transitions.easing.sharp}`,
-    animation:`$fadein 6300ms ${theme.transitions.easing.sharp}`,
+    "-webkit-animation": `$fadein 4700ms ${theme.transitions.easing.sharp}`,
+    animation:`$fadein 4700ms ${theme.transitions.easing.sharp}`,
   },
   "@-webkit-keyframes fadein": {
     "0%": { opacity: 0 },
@@ -56,20 +56,20 @@ const useStyles = makeStyles(theme => ({
     width: "13rem"
   },
   "mobileFirst": {
-    "-webkit-animation": `$fadein 2900ms ${theme.transitions.easing.sharp}`,
-    animation:`$fadein 2900ms ${theme.transitions.easing.sharp}`,
+    "-webkit-animation": `$fadein 1600ms ${theme.transitions.easing.sharp}`,
+    animation:`$fadein 1600ms ${theme.transitions.easing.sharp}`,
   },
   "mobileSecond": {
-    "-webkit-animation": `$fadein 3000ms ${theme.transitions.easing.sharp}`,
-    animation:`$fadein 3000ms ${theme.transitions.easing.sharp}`,
+    "-webkit-animation": `$fadein 1700ms ${theme.transitions.easing.sharp}`,
+    animation:`$fadein 1700ms ${theme.transitions.easing.sharp}`,
   },
   "mobileThird": {
-    "-webkit-animation": `$fadein 3100ms ${theme.transitions.easing.sharp}`,
-    animation:`$fadein 3100ms ${theme.transitions.easing.sharp}`,
+    "-webkit-animation": `$fadein 1800ms ${theme.transitions.easing.sharp}`,
+    animation:`$fadein 1800ms ${theme.transitions.easing.sharp}`,
   },
   "mobileFourth": {
-    "-webkit-animation": `$fadein 3200ms ${theme.transitions.easing.sharp}`,
-    animation:`$fadein 3200ms ${theme.transitions.easing.sharp}`,
+    "-webkit-animation": `$fadein 1900ms ${theme.transitions.easing.sharp}`,
+    animation:`$fadein 1900ms ${theme.transitions.easing.sharp}`,
   },
 }));
 

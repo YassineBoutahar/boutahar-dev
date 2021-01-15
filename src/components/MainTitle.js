@@ -35,7 +35,7 @@ const MainTitle = (props) => {
             typeSpeed={80}
             backDelay={800}
             showCursor={false}
-            startDelay={1600}
+            startDelay={0}
             onComplete={ (self) => { /*self.cursor.remove();*/ self.stop(); } }>
         </Typed>
       </Typography>
@@ -46,7 +46,7 @@ const MainTitle = (props) => {
             typeSpeed={80}
             backSpeed={80}
             showCursor={false}
-            startDelay={3200}
+            startDelay={1600}
             onComplete={ (self) => { /*self.cursor.remove();*/ self.stop(); } }>
         </Typed>
       </Typography>
