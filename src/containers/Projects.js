@@ -1,10 +1,17 @@
-import React from 'react';
-import { makeStyles, useMediaQuery, Typography, Box, Divider } from '@material-ui/core';
-import ProjectBlock from '../components/ProjectBlock';
-import findLivingSpaceDemo from '../images/FindLivingSpaceDemo.mp4';
-import threeKFiveBooksDemo from '../images/3K5BooksDemo.mp4';
+import React from "react";
+import {
+  makeStyles,
+  useMediaQuery,
+  Typography,
+  Box,
+  Divider,
+} from "@material-ui/core";
+import ProjectBlock from "../components/ProjectBlock";
+import findLivingSpaceDemo from "../images/FindLivingSpaceDemo.mp4";
+import threeKFiveBooksDemo from "../images/3K5BooksDemo.mp4";
+import theShoppiesDemo from "../images/TheShoppiesDemo.mp4";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     backgroundColor: "#1a2139",
     paddingTop: "2rem",
@@ -12,7 +19,7 @@ const useStyles = makeStyles(theme => ({
   content: {
     width: "70%",
     marginLeft: "auto",
-    marginRight: "auto"
+    marginRight: "auto",
   },
   title: {
     color: "#cea842",
@@ -39,7 +46,7 @@ const useStyles = makeStyles(theme => ({
   mobileContent: {
     width: "90%",
     marginLeft: "auto",
-    marginRight: "auto"
+    marginRight: "auto",
   },
   mobileTitle: {
     color: "#cea842",
@@ -55,7 +62,7 @@ const useStyles = makeStyles(theme => ({
 
 const Projects = (props) => {
   const classes = useStyles();
-  const desktop = useMediaQuery('(min-width:1020px)');
+  const desktop = useMediaQuery("(min-width:1020px)");
 
   let contentClass = desktop ? classes.content : classes.mobileContent;
   let titleClass = desktop ? classes.title : classes.mobileTitle;
@@ -63,59 +70,118 @@ const Projects = (props) => {
   let titleFont = desktop ? "h1" : "h2";
 
   return (
-    <Box display="flex" justifyContent="center" className={classes.root} id="Projects">
+    <Box
+      display="flex"
+      justifyContent="center"
+      className={classes.root}
+      id="Projects"
+    >
       <Box className={contentClass}>
         <Typography variant={titleFont} className={titleClass}>
           Projects
         </Typography>
-        <Divider className={dividerClass}/>
-        <ProjectBlock vid={findLivingSpaceDemo} title="FindLivingSpace" languages="Node.js, MongoDB, Python, React" alt="FindLivingSpace Demo" link="https://findlivingspace.boutahar.dev/">
+        <Divider className={dividerClass} />
+        <ProjectBlock
+          vid={findLivingSpaceDemo}
+          title="FindLivingSpace"
+          languages="Node.js, MongoDB, Python, React"
+          alt="FindLivingSpace Demo"
+          link="https://findlivingspace.boutahar.dev/"
+        >
           <Typography variant="subtitle1" className={classes.description}>
-            An interactive platform that helps students find affordable housing within accessible distance of their work/university.
+            An interactive platform that helps students find affordable housing
+            within accessible distance of their work/university.
             <ul className={classes.ul}>
-              <li>Populates MongoDB database with listings scraped from many renting sites using a Python script</li>
-              <li>Dynamically plot accessible houses on a map using MapBox API</li>
-              <li>Calculate walking distance between coordinates using Google Maps API</li>
-              <li>Query Mongo database for listings that match user-defined criteria</li>
+              <li>
+                Populates MongoDB database with listings scraped from many
+                renting sites using a Python script
+              </li>
+              <li>
+                Dynamically plot accessible houses on a map using MapBox API
+              </li>
+              <li>
+                Calculate walking distance between coordinates using Google Maps
+                API
+              </li>
+              <li>
+                Query Mongo database for listings that match user-defined
+                criteria
+              </li>
             </ul>
           </Typography>
         </ProjectBlock>
-        <Divider className={classes.blockDivider}/>
-        <ProjectBlock vid={threeKFiveBooksDemo} title="3K5 Books" languages="Node.js, PostgreSQL, React" alt="3K5 Books Demo" link="https://lookinnabook-frontend.herokuapp.com/">
+        <Divider className={classes.blockDivider} />
+        <ProjectBlock
+          vid={threeKFiveBooksDemo}
+          title="3K5 Books"
+          languages="Node.js, PostgreSQL, React"
+          alt="3K5 Books Demo"
+          link="https://lookinnabook-frontend.herokuapp.com/"
+        >
           <Typography variant="subtitle1" className={classes.description}>
-            Stores and retrieves various entities such as users, books, authors, orders, etc. in a PostgeSQL DB
+            Stores and retrieves various entities such as users, books, authors,
+            orders, etc. in a PostgeSQL DB
             <ul className={classes.ul}>
               <li>Dynamic search function for finding books to order</li>
               <li>Register, login, add to cart and submit order features</li>
-              <li>Admin mode for bookstore owner to manage book inventory and publisher payouts</li>
+              <li>
+                Admin mode for bookstore owner to manage book inventory and
+                publisher payouts
+              </li>
             </ul>
           </Typography>
         </ProjectBlock>
-        <Divider className={classes.blockDivider}/>
-        <ProjectBlock title="SpotiBio" languages="Node.js, HTML" alt="SpotiBio Demo">
+        <Divider className={classes.blockDivider} />
+        <ProjectBlock
+          title="SpotiBio"
+          languages="Node.js, HTML"
+          alt="SpotiBio Demo"
+        >
           <Typography variant="subtitle1" className={classes.description}>
-            Updates your Instagram profile at a set interval to reflect your current or last played song on Spotify
+            Updates your Instagram profile at a set interval to reflect your
+            current or last played song on Spotify
             <ul className={classes.ul}>
-              <li>Provides custom login screen to Instagram account and integrated Spotify login</li>
-              <li>Queries user’s current or last played song using Spotify API at continuous interval</li>
-              <li>Updates user’s Instagram account’s profile picture, biography and URL to match song</li>
+              <li>
+                Provides custom login screen to Instagram account and integrated
+                Spotify login
+              </li>
+              <li>
+                Queries user’s current or last played song using Spotify API at
+                continuous interval
+              </li>
+              <li>
+                Updates user’s Instagram account’s profile picture, biography
+                and URL to match song
+              </li>
             </ul>
           </Typography>
         </ProjectBlock>
-        {/*<Divider className={classes.blockDivider}/>
-        <ProjectBlock title="The Shoppies" languages="Node.js, React, Shopify Polaris, Axios" alt="Shoppies Demo" link="https://shoppies.boutahar.dev/">
+        <Divider className={classes.blockDivider} />
+        <ProjectBlock
+          vid={theShoppiesDemo}
+          title="The Shoppies"
+          languages="Node.js, React, Shopify Polaris"
+          alt="Shoppies Demo"
+          link="https://shoppies.boutahar.dev/"
+        >
           <Typography variant="subtitle1" className={classes.description}>
             Nomination platform for a hypothetical Shopify movie awards event
             <ul className={classes.ul}>
               <li>Uses OMDB to fetch movies from user search queries</li>
-              <li>Lets users nominate up to 5 movies and save their choices in local storage for convenience</li>
-              <li>Allows users to share their nominations with an attractive coverflow using a shareable link</li>
+              <li>
+                Lets users nominate up to 5 movies and save their choices in
+                local storage for convenience
+              </li>
+              <li>
+                Allows users to share their nominations with a coverflow display
+                using a shareable link
+              </li>
             </ul>
           </Typography>
-        </ProjectBlock>*/}
+        </ProjectBlock>
       </Box>
     </Box>
   );
-}
+};
 
 export default Projects;
