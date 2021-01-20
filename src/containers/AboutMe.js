@@ -8,13 +8,13 @@ import signiantLogo from '../images/smaller_signiant.png';
 import apptionLogo from '../images/smaller_apption.png';
 import bd2iLogo from '../images/smaller_bd2i.png';
 import mobileCarletonLogo from '../images/mobile_carleton.png';
+import mobileGocLogo from '../images/mobile_goc.png';
 import mobileSigniantLogo from '../images/mobile_signiant.png';
 import mobileApptionLogo from '../images/mobile_apption.png';
 import mobileBd2iLogo from '../images/mobile_bd2i.png';
 
 const useStyles = makeStyles(theme => ({
-  root: {
-  },
+  root: {},
   description: {
     color: "#e0ebff",
     textAlign: "left",
@@ -34,6 +34,7 @@ const AboutMe = (props) => {
   let signiant = desktop ? signiantLogo : mobileSigniantLogo;
   let apption = desktop ? apptionLogo : mobileApptionLogo;
   let bd2i = desktop ? bd2iLogo : mobileBd2iLogo;
+  let goc = desktop ? gocLogo : mobileGocLogo;
 
   return (
     <div id="AboutMe">
@@ -44,13 +45,15 @@ const AboutMe = (props) => {
           </Typography>
         </AboutBlock>
       </WideContainer>
+
       <WideContainer variant="grey">
-        <AboutBlock img={gocLogo} alt="Department of National Defence" title="Winter 2021" link="https://www.canada.ca/">
+        <AboutBlock img={goc} alt="Department of National Defence" title="Winter 2021" link="https://www.canada.ca/">
           <Typography variant="subtitle1" className={classes.description}>
-            Currently working as software developer for the federal government of Canada.
+            Currently working as software developer for the federal government of Canada in the department of national defence.
           </Typography>
         </AboutBlock>
       </WideContainer>
+
       <WideContainer>
         <AboutBlock img={signiant} alt="Signiant" title="Fall 2020" link="https://www.signiant.com/">
           <Typography variant="subtitle1" className={classes.description}>
@@ -63,6 +66,7 @@ const AboutMe = (props) => {
           </Typography>
         </AboutBlock>
       </WideContainer>
+
       <WideContainer variant="grey">
         <AboutBlock img={apption} alt="Apption" title="Summer 2020" link="https://www.apption.com/">
           <Typography variant="subtitle1" className={classes.description}>
@@ -77,6 +81,7 @@ const AboutMe = (props) => {
           </Typography>
         </AboutBlock>
       </WideContainer>
+
       <WideContainer>
         <AboutBlock img={bd2i} alt="BD2I" title="Summer 2019" link="http://www.bd2i.ai/">
           <Typography variant="subtitle1" className={classes.description}>

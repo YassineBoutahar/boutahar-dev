@@ -128,20 +128,20 @@ const HeaderSplash = () => {
         flexDirection="column"
         alignItems="center"
         className={classes.mobileContainer}>
-
         <div>
           <Typography variant="h4" className={classes.mobileTitle}>
             Welcome,
           </Typography>
+
           <Typography variant="h3" className={classes.mobileTitle}>
             I'm Yassine!
           </Typography>
+
           <Divider className={classes.mobileDivider}/>
         </div>
 
         <img src={headshot} alt="headshot" className={classes.headshotSmall} onContextMenu={(e)=> e.preventDefault()}/>
         <SocialsBar variant="small"/>
-
       </Box>
     );
   }

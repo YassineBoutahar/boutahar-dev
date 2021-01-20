@@ -67,7 +67,7 @@ const Projects = (props) => {
   let contentClass = desktop ? classes.content : classes.mobileContent;
   let titleClass = desktop ? classes.title : classes.mobileTitle;
   let dividerClass = desktop ? classes.divider : classes.mobileDivider;
-  let titleFont = desktop ? "h1" : "h2";
+  let titleFont = desktop ? "h2" : "h3";
 
   return (
     <Box
@@ -80,6 +80,7 @@ const Projects = (props) => {
         <Typography variant={titleFont} className={titleClass}>
           Projects
         </Typography>
+
         <Divider className={dividerClass} />
         <ProjectBlock
           vid={findLivingSpaceDemo}
@@ -110,6 +111,7 @@ const Projects = (props) => {
             </ul>
           </Typography>
         </ProjectBlock>
+
         <Divider className={classes.blockDivider} />
         <ProjectBlock
           vid={threeKFiveBooksDemo}
@@ -131,6 +133,31 @@ const Projects = (props) => {
             </ul>
           </Typography>
         </ProjectBlock>
+
+        <Divider className={classes.blockDivider} />
+        <ProjectBlock
+          vid={theShoppiesDemo}
+          title="The Shoppies"
+          languages="Node.js, React, Shopify Polaris"
+          alt="Shoppies Demo"
+          link="https://shoppies.boutahar.dev/"
+        >
+          <Typography variant="subtitle1" className={classes.description}>
+            Nomination platform for a hypothetical Shopify movie awards event
+            <ul className={classes.ul}>
+              <li>Uses OMDB to fetch movies from user search queries</li>
+              <li>
+                Lets users nominate up to 5 movies and save their choices in
+                local storage for convenience
+              </li>
+              <li>
+                Allows users to share their nominations with a coverflow display
+                using a shareable link
+              </li>
+            </ul>
+          </Typography>
+        </ProjectBlock>
+        
         <Divider className={classes.blockDivider} />
         <ProjectBlock
           title="SpotiBio"
@@ -152,29 +179,6 @@ const Projects = (props) => {
               <li>
                 Updates user’s Instagram account’s profile picture, biography
                 and URL to match song
-              </li>
-            </ul>
-          </Typography>
-        </ProjectBlock>
-        <Divider className={classes.blockDivider} />
-        <ProjectBlock
-          vid={theShoppiesDemo}
-          title="The Shoppies"
-          languages="Node.js, React, Shopify Polaris"
-          alt="Shoppies Demo"
-          link="https://shoppies.boutahar.dev/"
-        >
-          <Typography variant="subtitle1" className={classes.description}>
-            Nomination platform for a hypothetical Shopify movie awards event
-            <ul className={classes.ul}>
-              <li>Uses OMDB to fetch movies from user search queries</li>
-              <li>
-                Lets users nominate up to 5 movies and save their choices in
-                local storage for convenience
-              </li>
-              <li>
-                Allows users to share their nominations with a coverflow display
-                using a shareable link
               </li>
             </ul>
           </Typography>

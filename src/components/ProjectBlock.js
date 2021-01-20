@@ -92,11 +92,13 @@ const ProjectBlock = (props) => {
           <Typography variant={projectTitleFont}>
             <a className={classes.blockHeader} href={props.link}>{props.title}</a>
           </Typography>
+
           <Typography variant="subtitle1" className={classes.subtitle}>
             {props.languages}
           </Typography>
         </div>
         {props.children}
+        
         <Typography variant="subtitle1" className={classes.demoLink}>
           { props.link ? <a className={classes.demoLink} href={props.link} target="_blank" rel="noopener noreferrer">Try the demo here</a> : "" }
         </Typography>

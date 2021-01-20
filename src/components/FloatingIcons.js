@@ -1,20 +1,20 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Particles from 'react-particles-js';
-import pythonIcon from '../Icons/python.svg';
-import cppIcon from '../Icons/cpp.svg';
-import csharpIcon from '../Icons/csharp.svg';
-import htmlIcon from '../Icons/html.svg';
-import javaIcon from '../Icons/java.svg';
-import jsIcon from '../Icons/js.svg';
-import pgsqlIcon from '../Icons/pgsql.svg';
-import reactIcon from '../Icons/react.svg';
-import reduxIcon from '../Icons/redux.svg';
-import swiftIcon from '../Icons/swift.svg';
-import letterYIcon from '../Icons/letterY.svg';
-import letterBIcon from '../Icons/letterB.svg';
+import React from "react";
+import { makeStyles } from "@material-ui/core/styles";
+import Particles from "react-particles-js";
+import pythonIcon from "../Icons/python.svg";
+import cppIcon from "../Icons/cpp.svg";
+import csharpIcon from "../Icons/csharp.svg";
+import htmlIcon from "../Icons/html.svg";
+import javaIcon from "../Icons/java.svg";
+import jsIcon from "../Icons/js.svg";
+import pgsqlIcon from "../Icons/pgsql.svg";
+import reactIcon from "../Icons/react.svg";
+import reduxIcon from "../Icons/redux.svg";
+import swiftIcon from "../Icons/swift.svg";
+import letterYIcon from "../Icons/letterY.svg";
+import letterBIcon from "../Icons/letterB.svg";
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
     display: "flex",
     flexFlow: "column",
@@ -22,120 +22,113 @@ const useStyles = makeStyles(theme => ({
     width: "100%",
     backgroundColor: "#1a2139",
     position: "absolute",
-    zIndex: 1001
-  }
+    zIndex: 1001,
+  },
 }));
 
 const FloatingIcons = () => {
   const classes = useStyles();
 
   const particlesObject = {
-      "particles": {
-          "number": {
-              "value": 20,
-              "density": {
-                  "enable": false,
-                  "value_area": 700
-              }
-          },
-          "color": {
-              "value": "#d0bf92"
-          },
-          "shape": {
-              "type": "image",
-              "stroke": {
-                  "width": 2,
-                  "color": "#d0bf92"
-              },
-              "polygon": {
-                  "nb_sides": 6
-              },
-              "images": [
-                { "src": cppIcon, "width": 100, "height": 100 },
-                { "src": csharpIcon, "width": 100, "height": 100 },
-                { "src": htmlIcon, "width": 100, "height": 100 },
-                { "src": javaIcon, "width": 100, "height": 100 },
-                { "src": jsIcon, "width": 100, "height": 100 },
-                { "src": pgsqlIcon, "width": 100, "height": 100 },
-                { "src": pythonIcon, "width": 100, "height": 100 },
-                { "src": reactIcon, "width": 100, "height": 100 },
-                { "src": reduxIcon, "width": 100, "height": 100 },
-                { "src": swiftIcon, "width": 100, "height": 100 },
-                { "src": letterYIcon, "width": 100, "height": 100 },
-                { "src": letterBIcon, "width": 100, "height": 100 },
-              ]
-          },
-          "opacity": {
-              "value": 1,
-              "random": false
-          },
-          "size": {
-            "value": 20,
-            "random": {
-              "enable": true,
-              "minimumValue": 12
-            }
-          },
-          "line_linked": {
-              "enable": false,
-              "distance": 200,
-              "color": "#333e5b",
-              "opacity": 0.3,
-              "width": 2
-          },
-          "move": {
-              "enable": true,
-              "speed": 1.5,
-              "direction": "bottom",
-              "random": true,
-              "straight": true,
-              "out_mode": "out",
-              "bounce": false,
-              "attract": {
-                  "enable": false,
-                  "rotateX": 600,
-                  "rotateY": 1200
-              }
-          }
+    particles: {
+      number: {
+        value: 20,
+        density: {
+          enable: false,
+          value_area: 700,
+        },
       },
-      "interactivity": {
-          "detect_on": "window",
-          "events": {
-              "onhover": {
-                  "enable": true,
-                  "mode": [
-                      "bubble"
-                  ]
-              },
-              "onclick": {
-                  "enable": true,
-                  "mode": "push"
-              },
-              "resize": true
-          },
-          "modes": {
-              "bubble": {
-                  "distance": 200,
-                  "size": 26,
-                  "duration": 1,
-                  "opacity": 1.0,
-                  "speed": 0.5
-              },
-              "push": {
-                  "particles_nb": 1
-              },
-          }
+      color: {
+        value: "#d0bf92",
       },
-      "retina_detect": false,
-      "fps_limit": 60,
-  }
+      shape: {
+        type: "image",
+        stroke: {
+          width: 2,
+          color: "#d0bf92",
+        },
+        polygon: {
+          nb_sides: 6,
+        },
+        images: [
+          { src: cppIcon, width: 100, height: 100 },
+          { src: csharpIcon, width: 100, height: 100 },
+          { src: htmlIcon, width: 100, height: 100 },
+          { src: javaIcon, width: 100, height: 100 },
+          { src: jsIcon, width: 100, height: 100 },
+          { src: pgsqlIcon, width: 100, height: 100 },
+          { src: pythonIcon, width: 100, height: 100 },
+          { src: reactIcon, width: 100, height: 100 },
+          { src: reduxIcon, width: 100, height: 100 },
+          { src: swiftIcon, width: 100, height: 100 },
+          { src: letterYIcon, width: 100, height: 100 },
+          { src: letterBIcon, width: 100, height: 100 },
+        ],
+      },
+      opacity: {
+        value: 1,
+        random: false,
+      },
+      size: {
+        value: 20,
+        random: {
+          enable: true,
+          minimumValue: 12,
+        },
+      },
+      line_linked: {
+        enable: false,
+        distance: 200,
+        color: "#333e5b",
+        opacity: 0.3,
+        width: 2,
+      },
+      move: {
+        enable: true,
+        speed: 1.5,
+        direction: "bottom",
+        random: true,
+        straight: true,
+        out_mode: "out",
+        bounce: false,
+        attract: {
+          enable: false,
+          rotateX: 600,
+          rotateY: 1200,
+        },
+      },
+    },
+    interactivity: {
+      detect_on: "window",
+      events: {
+        onhover: {
+          enable: true,
+          mode: ["bubble"],
+        },
+        onclick: {
+          enable: true,
+          mode: "push",
+        },
+        resize: true,
+      },
+      modes: {
+        bubble: {
+          distance: 200,
+          size: 26,
+          duration: 1,
+          opacity: 1.0,
+          speed: 0.5,
+        },
+        push: {
+          particles_nb: 1,
+        },
+      },
+    },
+    retina_detect: false,
+    fps_limit: 60,
+  };
 
-  return (
-      <Particles
-        className={classes.root}
-        params={particlesObject}
-      />
-  );
-}
+  return <Particles className={classes.root} params={particlesObject} />;
+};
 
 export default FloatingIcons;

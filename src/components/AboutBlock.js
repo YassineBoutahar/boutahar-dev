@@ -48,6 +48,7 @@ const useStyles = makeStyles(theme => ({
     height: "auto",
     display: "block",
     margin: "auto",
+    paddingRight: '1rem',
     verticalAlign: "middle"
   },
 }));
@@ -87,10 +88,12 @@ const AboutBlock = (props) => {
               <Typography variant="h4">
                 {props.title}
               </Typography>
+
               <a href={props.link}>
                 <img src={props.img} alt={props.alt} className={classes.mobileImage}/>
               </a>
             </Box>
+            
             <Divider className={classes.divider}/>
           </div>
           {props.children}
