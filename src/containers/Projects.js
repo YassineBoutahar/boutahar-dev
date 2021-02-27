@@ -7,6 +7,7 @@ import {
   Divider,
 } from "@material-ui/core";
 import ProjectBlock from "../components/ProjectBlock";
+import portfolioBuilderDemo from "../images/PortfolioBuilderDemo.mp4";
 import findLivingSpaceDemo from "../images/FindLivingSpaceDemo.mp4";
 import threeKFiveBooksDemo from "../images/3K5BooksDemo.mp4";
 import theShoppiesDemo from "../images/TheShoppiesDemo.mp4";
@@ -83,6 +84,37 @@ const Projects = (props) => {
 
         <Divider className={dividerClass} />
         <ProjectBlock
+          vid={portfolioBuilderDemo}
+          title="Portfolio Builder"
+          languages="Typescript, React, Node.js, DynamoDB, Elastic Beanstalk"
+          alt="Portfolio Builder Demo"
+          link="https://portfoliobuilder.boutahar.dev/"
+        >
+          <Typography variant="subtitle1" className={classes.description}>
+            A web app to facilitate the building, sharing and analysis of a
+            personal financial portfolio.
+            <ul className={classes.ul}>
+              <li>
+                Pulls financial data including, stock names, prices and
+                historical data from Yahoo Finance through a Node.js proxy
+                server
+              </li>
+              <li>
+                Allows user to add stocks, assign them percentages of their
+                overall portfolio value, and calculate number of shares to buy
+              </li>
+              <li>
+                Conveniently plots historical portfolio data and breakdowns using Chart.js
+              </li>
+              <li>
+                Lets users share their portfolio with a copiable share link
+              </li>
+            </ul>
+          </Typography>
+        </ProjectBlock>
+
+        <Divider className={classes.blockDivider} />
+        <ProjectBlock
           vid={findLivingSpaceDemo}
           title="FindLivingSpace"
           languages="Node.js, MongoDB, Python, React"
@@ -114,28 +146,6 @@ const Projects = (props) => {
 
         <Divider className={classes.blockDivider} />
         <ProjectBlock
-          vid={threeKFiveBooksDemo}
-          title="3K5 Books"
-          languages="Node.js, PostgreSQL, React"
-          alt="3K5 Books Demo"
-          link="https://lookinnabook-frontend.herokuapp.com/"
-        >
-          <Typography variant="subtitle1" className={classes.description}>
-            Stores and retrieves various entities such as users, books, authors,
-            orders, etc. in a PostgeSQL DB
-            <ul className={classes.ul}>
-              <li>Dynamic search function for finding books to order</li>
-              <li>Register, login, add to cart and submit order features</li>
-              <li>
-                Admin mode for bookstore owner to manage book inventory and
-                publisher payouts
-              </li>
-            </ul>
-          </Typography>
-        </ProjectBlock>
-
-        <Divider className={classes.blockDivider} />
-        <ProjectBlock
           vid={theShoppiesDemo}
           title="The Shoppies"
           languages="Node.js, React, Shopify Polaris"
@@ -157,7 +167,30 @@ const Projects = (props) => {
             </ul>
           </Typography>
         </ProjectBlock>
+
+        <Divider className={classes.blockDivider} />
+        <ProjectBlock
+          vid={threeKFiveBooksDemo}
+          title="3K5 Books"
+          languages="Node.js, PostgreSQL, React"
+          alt="3K5 Books Demo"
+          link="https://lookinnabook-frontend.herokuapp.com/"
+        >
+          <Typography variant="subtitle1" className={classes.description}>
+            Stores and retrieves various entities such as users, books, authors,
+            orders, etc. in a PostgeSQL DB
+            <ul className={classes.ul}>
+              <li>Dynamic search function for finding books to order</li>
+              <li>Register, login, add to cart and submit order features</li>
+              <li>
+                Admin mode for bookstore owner to manage book inventory and
+                publisher payouts
+              </li>
+            </ul>
+          </Typography>
+        </ProjectBlock>
         
+
         <Divider className={classes.blockDivider} />
         <ProjectBlock
           title="SpotiBio"
