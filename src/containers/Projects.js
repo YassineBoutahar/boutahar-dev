@@ -104,7 +104,12 @@ const Projects = (props) => {
                 overall portfolio value, and calculate number of shares to buy
               </li>
               <li>
-                Conveniently plots historical portfolio data and breakdowns using Chart.js
+                Conveniently plots historical portfolio data and breakdowns
+                using Chart.js
+              </li>
+              <li>
+                Search bar supports ticker autocomplete and trending/recommended
+                stocks, backed by Yahoo Finance statistics
               </li>
               <li>
                 Lets users share their portfolio with a copiable share link
@@ -189,7 +194,6 @@ const Projects = (props) => {
             </ul>
           </Typography>
         </ProjectBlock>
-        
 
         <Divider className={classes.blockDivider} />
         <ProjectBlock

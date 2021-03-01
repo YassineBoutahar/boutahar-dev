@@ -2,11 +2,13 @@ import React from 'react';
 import WideContainer from './WideContainer';
 import AboutBlock from '../components/AboutBlock';
 import { makeStyles, useMediaQuery, Typography } from '@material-ui/core';
+import amazonLogo from '../images/amazon.png';
 import carletonLogo from '../images/smaller_carleton.png';
 import gocLogo from '../images/smaller_goc.png';
 import signiantLogo from '../images/smaller_signiant.png';
 import apptionLogo from '../images/smaller_apption.png';
 import bd2iLogo from '../images/smaller_bd2i.png';
+import mobileAmazonLogo from '../images/mobile_amazon.png';
 import mobileCarletonLogo from '../images/mobile_carleton.png';
 import mobileGocLogo from '../images/mobile_goc.png';
 import mobileSigniantLogo from '../images/mobile_signiant.png';
@@ -30,6 +32,7 @@ const useStyles = makeStyles(theme => ({
 const AboutMe = (props) => {
   const classes = useStyles();
   const desktop = useMediaQuery('(min-width:1020px)');
+  let amazon = desktop ? amazonLogo : mobileAmazonLogo;
   let carleton = desktop ? carletonLogo : mobileCarletonLogo;
   let signiant = desktop ? signiantLogo : mobileSigniantLogo;
   let apption = desktop ? apptionLogo : mobileApptionLogo;
@@ -38,10 +41,18 @@ const AboutMe = (props) => {
 
   return (
     <div id="AboutMe">
-      <WideContainer>
+      <WideContainer variant="grey">
         <AboutBlock img={carleton} alt="Carleton University" title="About Me" link="https://carleton.ca/scs/">
           <Typography variant="subtitle1" className={classes.description}>
-            I am a third year student in Carleton University's Computer Science Honours program with a minor in psychology. I am currently working from home in Toronto and I am seeking internship opportunities for the 2021 Summer co-op term.
+            I am a third year student in Carleton University's Computer Science Honours program with a minor in psychology. I am currently working from home in Toronto and I am seeking internship opportunities for the 2021 Fall co-op term.
+          </Typography>
+        </AboutBlock>
+      </WideContainer>
+      
+      <WideContainer>
+        <AboutBlock img={amazon} alt="Amazon" title="Summer 2021" link="https://aws.amazon.com/">
+          <Typography variant="subtitle1" className={classes.description}>
+            Incoming Software Developer Engineer intern at Amazon.
           </Typography>
         </AboutBlock>
       </WideContainer>
