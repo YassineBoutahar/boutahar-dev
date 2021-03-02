@@ -100,7 +100,7 @@ const Projects = (props) => {
                 server
               </li>
               <li>
-                Allows user to add stocks, assign them percentages of their
+                Allows users to add stocks, assign them percentages of their
                 overall portfolio value, and calculate number of shares to buy
               </li>
               <li>
