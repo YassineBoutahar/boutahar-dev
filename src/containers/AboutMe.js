@@ -41,7 +41,7 @@ const AboutMe = (props) => {
 
   return (
     <div id="AboutMe">
-      <WideContainer variant="grey">
+      <WideContainer>
         <AboutBlock img={carleton} alt="Carleton University" title="About Me" link="https://carleton.ca/scs/">
           <Typography variant="subtitle1" className={classes.description}>
             I am a third year student in Carleton University's Computer Science Honours program with a minor in psychology. I am currently working from home in Toronto and I am seeking internship opportunities for the 2021 Fall co-op term.
@@ -49,7 +49,7 @@ const AboutMe = (props) => {
         </AboutBlock>
       </WideContainer>
       
-      <WideContainer>
+      <WideContainer variant="grey">
         <AboutBlock img={amazon} alt="Amazon" title="Summer 2021" link="https://aws.amazon.com/">
           <Typography variant="subtitle1" className={classes.description}>
             Incoming Software Developer Engineer intern at Amazon.
@@ -57,7 +57,7 @@ const AboutMe = (props) => {
         </AboutBlock>
       </WideContainer>
 
-      <WideContainer variant="grey">
+      <WideContainer>
         <AboutBlock img={goc} alt="Department of National Defence" title="Winter 2021" link="https://www.canada.ca/">
           <Typography variant="subtitle1" className={classes.description}>
             Currently working as software developer for the federal government of Canada in the department of national defence.
@@ -65,7 +65,7 @@ const AboutMe = (props) => {
         </AboutBlock>
       </WideContainer>
 
-      <WideContainer>
+      <WideContainer variant="grey">
         <AboutBlock img={signiant} alt="Signiant" title="Fall 2020" link="https://www.signiant.com/">
           <Typography variant="subtitle1" className={classes.description}>
             Worked at <a className={classes.a} href="https://www.signiant.com/"><b>Signiant</b></a> as a Fullstack Developer co-op, primarily on the <a className={classes.a} href="https://www.signiant.com/products/signiant-manager/">Manager+Agents</a> product and cross-product React dashboard.
@@ -78,7 +78,7 @@ const AboutMe = (props) => {
         </AboutBlock>
       </WideContainer>
 
-      <WideContainer variant="grey">
+      <WideContainer>
         <AboutBlock img={apption} alt="Apption" title="Summer 2020" link="https://www.apption.com/">
           <Typography variant="subtitle1" className={classes.description}>
             Worked at <a className={classes.a} href="https://www.apption.com/"><b>Apption</b></a> as a Fullstack Developer co-op, primarily on the <a className={classes.a} href="https://www.datahunter.ai/">Datahunter</a> product and <a className={classes.a} href="https://returntoplay.canadasoccer.com/">Return to Play</a> website.
@@ -93,7 +93,7 @@ const AboutMe = (props) => {
         </AboutBlock>
       </WideContainer>
 
-      <WideContainer>
+      <WideContainer variant="grey">
         <AboutBlock img={bd2i} alt="BD2I" title="Summer 2019" link="http://www.bd2i.ai/">
           <Typography variant="subtitle1" className={classes.description}>
             Interned at <a className={classes.a} href="http://www.bd2i.ai/"><b>BD2I</b></a> as a Mobile Application Developer, prototyping a currently unreleased mobile product, and training/integrating a PyTorch ML model.
