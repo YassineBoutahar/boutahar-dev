@@ -50,9 +50,9 @@ const AboutMe = (props) => {
       </WideContainer>
       
       <WideContainer variant="grey">
-        <AboutBlock img={amazon} alt="Amazon" title="Summer 2021" link="https://aws.amazon.com/">
+        <AboutBlock img={amazon} alt="Amazon" title="Summer 2021" link="https://www.amazon.com/alexa-drop-in-calling-intercom/b?ie=UTF8&node=21393410011">
           <Typography variant="subtitle1" className={classes.description}>
-            Incoming Software Developer Engineer intern at Amazon.
+            Incoming Software Developer Engineer intern at Amazon under the Devices organization.
           </Typography>
         </AboutBlock>
       </WideContainer>
