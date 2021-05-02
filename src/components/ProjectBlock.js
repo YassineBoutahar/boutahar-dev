@@ -70,7 +70,7 @@ const ProjectBlock = (props) => {
 
   if(desktop){
     imageBlock = (
-      <Box display="flex" alignItems="flex-end" className={classes.videoCol}>
+      <Box display="flex" alignItems="center" className={classes.videoCol}>
         <a href={props.link}>
           <LazyLoad
             debounce={false}
