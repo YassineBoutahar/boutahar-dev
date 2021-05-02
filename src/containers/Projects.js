@@ -7,9 +7,10 @@ import {
   Divider,
 } from "@material-ui/core";
 import ProjectBlock from "../components/ProjectBlock";
+import webLineDemo from "../images/WebLineDemo.mp4";
 import portfolioBuilderDemo from "../images/PortfolioBuilderDemo.mp4";
 import findLivingSpaceDemo from "../images/FindLivingSpaceDemo.mp4";
-import threeKFiveBooksDemo from "../images/3K5BooksDemo.mp4";
+// import threeKFiveBooksDemo from "../images/3K5BooksDemo.mp4";
 import theShoppiesDemo from "../images/TheShoppiesDemo.mp4";
 
 const useStyles = makeStyles((theme) => ({
@@ -84,6 +85,41 @@ const Projects = (props) => {
 
         <Divider className={dividerClass} />
         <ProjectBlock
+          vid={webLineDemo}
+          title="WebLine"
+          languages="WebRTC, Typescript, React, Node.js, AWS WebSocket, DynamoDB"
+          alt="WebLine Demo"
+          link={desktop ? "https://webline.boutahar.dev/" : null}
+        >
+          <Typography variant="subtitle1" className={classes.description}>
+            A decentralized peer-to-peer video calling platform built on pure
+            WebRTC and React.
+            <ul className={classes.ul}>
+              <li>
+                Facilitates the standard WebRTC signalling process between peers
+                through an AWS WebSocket API Gateway
+              </li>
+              <li>
+                WebRTC along with STUN and TURN servers are leveraged to allow
+                for direct peer-to-peer and decentralized video communication
+              </li>
+              <li>
+                A WebRTC data channel is created to enable text chat within a side
+                drawer
+              </li>
+              <li>
+                Easy to remember and randomly generated usernames are kept in
+                DynamoDB to link users to their WebSocket connection IDs
+              </li>
+              <li>
+                Dynamic interface with draggable and resizable local camera view
+              </li>
+            </ul>
+          </Typography>
+        </ProjectBlock>
+
+        <Divider className={classes.blockDivider} />
+        <ProjectBlock
           vid={portfolioBuilderDemo}
           title="Portfolio Builder"
           languages="Typescript, React, Node.js, DynamoDB, Elastic Beanstalk"
@@ -124,7 +160,7 @@ const Projects = (props) => {
           title="FindLivingSpace"
           languages="Node.js, MongoDB, Python, React"
           alt="FindLivingSpace Demo"
-          link="https://findlivingspace.boutahar.dev/"
+          link={desktop ? "https://findlivingspace.boutahar.dev/" : null}
         >
           <Typography variant="subtitle1" className={classes.description}>
             An interactive platform that helps students find affordable housing
@@ -173,7 +209,7 @@ const Projects = (props) => {
           </Typography>
         </ProjectBlock>
 
-        <Divider className={classes.blockDivider} />
+        {/*<Divider className={classes.blockDivider} />
         <ProjectBlock
           vid={threeKFiveBooksDemo}
           title="3K5 Books"
@@ -193,7 +229,7 @@ const Projects = (props) => {
               </li>
             </ul>
           </Typography>
-        </ProjectBlock>
+        </ProjectBlock>*/}
 
         <Divider className={classes.blockDivider} />
         <ProjectBlock
