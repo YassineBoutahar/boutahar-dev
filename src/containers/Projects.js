@@ -96,7 +96,7 @@ const Projects = (props) => {
             WebRTC and React.
             <ul className={classes.ul}>
               <li>
-                Facilitates the standard WebRTC signalling process between peers
+                Implements the standard WebRTC signalling process between peers
                 through an AWS WebSocket API Gateway
               </li>
               <li>
