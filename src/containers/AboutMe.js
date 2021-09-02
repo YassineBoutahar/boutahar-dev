@@ -75,7 +75,7 @@ const AboutMe = (props) => {
             >
               <b>Shopify</b>
             </a>{" "}
-            on the Product Discovery team in the Core Product org.
+            on the Discovery Experience team in the Core Product org.
           </Typography>
         </AboutBlock>
       </WideContainer>

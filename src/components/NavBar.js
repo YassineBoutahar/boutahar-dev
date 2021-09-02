@@ -11,7 +11,7 @@ import {
   IconButton,
 } from "@material-ui/core";
 import MenuIcon from "@material-ui/icons/Menu";
-import ResumePDF from "../YassineBoutaharResume2021.pdf";
+import ResumePDF from "../YassineBoutaharResume2022.pdf";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 const useStyles = makeStyles((theme) => ({

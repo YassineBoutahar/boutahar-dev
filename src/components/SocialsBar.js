@@ -4,7 +4,7 @@ import {ReactComponent as LinkedInIcon} from '../Icons/linkedin.svg';
 import {ReactComponent as GithubIcon} from '../Icons/github.svg';
 import {ReactComponent as ResumeIcon} from '../Icons/resume.svg';
 import {ReactComponent as EmailIcon} from '../Icons/email.svg';
-import ResumePDF from '../YassineBoutaharResume2021.pdf';
+import ResumePDF from '../YassineBoutaharResume2022.pdf';
 
 const useStyles = makeStyles(theme => ({
   root: {
